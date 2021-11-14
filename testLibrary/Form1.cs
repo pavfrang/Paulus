@@ -17,6 +17,8 @@ namespace testLibrary
         {
             InitializeComponent();
 
+            //sample comment to test sync
+
             customCursor = CursorExtensions.CreateSampleCursor();
         }
 
