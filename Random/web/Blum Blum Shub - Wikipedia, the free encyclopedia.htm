@@ -1,0 +1,423 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0043)http://en.wikipedia.org/wiki/Blum_Blum_Shub -->
+<HTML lang=en dir=ltr xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Blum Blum Shub - Wikipedia, the free encyclopedia</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.5512" name=GENERATOR>
+<META 
+content="Blum Blum Shub,Big O notation,Computational complexity theory,Congruence relation,Cryptography,Euler's totient function,GNU Multi-Precision Library,Greatest common divisor,Integer factorization,Lenore Blum,Logarithm" 
+name=keywords><LINK title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=edit" 
+type=application/x-wiki rel=alternate><LINK href="/favicon.ico" 
+rel="shortcut icon"><LINK href="http://en.wikipedia.org/apple-touch-icon.png" 
+rel=apple-touch-icon><LINK title="Wikipedia (en)" href="/w/opensearch_desc.php" 
+type=application/opensearchdescription+xml rel=search><LINK 
+href="http://www.gnu.org/copyleft/fdl.html" rel=copyright><LINK 
+title="Wikipedia RSS Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss" 
+type=application/rss+xml rel=alternate><LINK title="Wikipedia Atom Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom" 
+type=application/atom+xml rel=alternate>
+<STYLE type=text/css media="screen, projection">@import url( /skins-1.5/common/shared.css?160 );
+@import url( /skins-1.5/monobook/main.css?160 );
+</STYLE>
+<LINK media=print 
+href="Blum Blum Shub - Wikipedia, the free encyclopedia_files/commonPrint.css" 
+type=text/css rel=stylesheet><!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?160";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?160";</style><![endif]--><!--[if IE 6]>
+<STYLE type=text/css>@import url( /skins-1.5/monobook/IE60Fixes.css?160 );
+</STYLE>
+<![endif]--><!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?160";</style><![endif]--><!--[if lt IE 7]>
+<SCRIPT src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/IEFixes.js" 
+type=text/javascript></SCRIPT>
+
+<META http-equiv=imagetoolbar content=no><![endif]-->
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgScript = "/w/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Blum_Blum_Shub";
+var wgTitle = "Blum Blum Shub";
+var wgAction = "view";
+var wgArticleId = "39599";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "224057253";
+var wgVersion = "1.13alpha";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgMWSuggestTemplate = "http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}";
+var wgDBname = "enwiki";
+var wgSearchNamespaces = [0];
+var wgMWSuggestMessages = ["with suggestions", "no suggestions"];
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/wikibits.js" 
+type=text/javascript><!-- wikibits js --></SCRIPT>
+<!-- Head Scripts -->
+<SCRIPT src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/ajax.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/mwsuggest.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/index.php" 
+type=text/javascript><!-- site js --></SCRIPT>
+
+<STYLE type=text/css>@import url( /w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=-&action=raw&gen=css&maxage=2678400 );
+</STYLE>
+</HEAD>
+<BODY class="mediawiki ns-0 ltr page-Blum_Blum_Shub">
+<DIV id=globalWrapper>
+<DIV id=column-content>
+<DIV id=content><A id=top name=top></A>
+<DIV id=siteNotice>
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+document.writeln("\x3cp\x3e\x3c/p\x3e\n");
+-->
+</SCRIPT>
+</DIV>
+<H1 class=firstHeading>Blum Blum Shub</H1>
+<DIV id=bodyContent>
+<H3 id=siteSub>From Wikipedia, the free encyclopedia</H3>
+<DIV id=contentSub></DIV>
+<DIV id=jump-to-nav>Jump to: <A 
+href="http://en.wikipedia.org/wiki/Blum_Blum_Shub#column-one">navigation</A>, <A 
+href="http://en.wikipedia.org/wiki/Blum_Blum_Shub#searchInput">search</A></DIV><!-- start content -->
+<P><B>Blum Blum Shub</B> (<B>B.B.S.</B>) is a <A 
+title="Pseudorandom number generator" 
+href="http://en.wikipedia.org/wiki/Pseudorandom_number_generator">pseudorandom 
+number generator</A> proposed in 1986 by <A title="Lenore Blum" 
+href="http://en.wikipedia.org/wiki/Lenore_Blum">Lenore Blum</A>, <A 
+title="Manuel Blum" href="http://en.wikipedia.org/wiki/Manuel_Blum">Manuel 
+Blum</A> and <A class=new title="Michael Shub (page does not exist)" 
+href="http://en.wikipedia.org/w/index.php?title=Michael_Shub&amp;action=edit&amp;redlink=1">Michael 
+Shub</A> (Blum et al, 1986).</P>
+<P>Blum Blum Shub takes the form:</P>
+<DL>
+  <DD><I>x</I><SUB><I>n</I>+1</SUB> = (<I>x<SUB>n</SUB></I>)<SUP>2</SUP> <A 
+  title="Modular arithmetic" 
+  href="http://en.wikipedia.org/wiki/Modular_arithmetic">mod</A> <I>M</I> 
+</DD></DL>
+<P>where <I>M=pq</I> is the product of two large <A title="Prime number" 
+href="http://en.wikipedia.org/wiki/Prime_number">primes</A> <I>p</I> and 
+<I>q</I>. At each step of the algorithm, some output is derived from 
+<I>x</I><SUB><I>n</I></SUB>; the output is commonly either the <A 
+title="Parity bit" href="http://en.wikipedia.org/wiki/Parity_bit">bit parity</A> 
+of <I>x</I><SUB><I>n</I></SUB> or one or more of the least significant bits of 
+<I>x</I><SUB><I>n</I></SUB>.</P>
+<P>The two primes, <I>p</I> and <I>q</I>, should both be <A 
+title="Congruence relation" 
+href="http://en.wikipedia.org/wiki/Congruence_relation">congruent</A> to 3 (mod 
+4) (this guarantees that each <A title="Quadratic residue" 
+href="http://en.wikipedia.org/wiki/Quadratic_residue">quadratic residue</A> has 
+one <A title="Square root" 
+href="http://en.wikipedia.org/wiki/Square_root">square root</A> which is also a 
+quadratic residue) and <A title="Greatest common divisor" 
+href="http://en.wikipedia.org/wiki/Greatest_common_divisor">gcd</A>(<A 
+title="Euler's totient function" 
+href="http://en.wikipedia.org/wiki/Euler's_totient_function">φ</A>(<I>p</I>-1), 
+φ(<I>q</I>-1)) should be small (this makes the cycle length large).</P>
+<P>An interesting characteristic of the Blum Blum Shub generator is the 
+possibility to calculate any <I>x</I><SUB><I>i</I></SUB> value directly:</P>
+<DL>
+  <DD><IMG class=tex 
+  alt=" x_i = \left( x_0^{2^i \bmod (p-1)(q-1)} \right) \bmod M. " 
+  src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/6f7bec5a93233883f8cbc5bdf23c291f.png"> 
+  </DD></DL>
+<TABLE class=toc id=toc summary=Contents>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV id=toctitle>
+      <H2>Contents</H2></DIV>
+      <UL>
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Blum_Blum_Shub#Security"><SPAN 
+        class=tocnumber>1</SPAN> <SPAN class=toctext>Security</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Blum_Blum_Shub#Example"><SPAN 
+        class=tocnumber>2</SPAN> <SPAN class=toctext>Example</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Blum_Blum_Shub#References"><SPAN 
+        class=tocnumber>3</SPAN> <SPAN class=toctext>References</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Blum_Blum_Shub#External_links"><SPAN 
+        class=tocnumber>4</SPAN> <SPAN class=toctext>External links</SPAN></A> 
+        </LI></UL></TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</SCRIPT>
+
+<P><A id=Security name=Security></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: Security" 
+href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=edit&amp;section=1">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Security</SPAN></H2>
+<P>The generator is not appropriate for use in simulations, only for <A 
+title=Cryptography 
+href="http://en.wikipedia.org/wiki/Cryptography">cryptography</A>, because it is 
+not very fast. However, it has an unusually strong security proof, which relates 
+the quality of the generator to the <A title="Computational complexity theory" 
+href="http://en.wikipedia.org/wiki/Computational_complexity_theory">computational 
+difficulty</A> of <A title="Integer factorization" 
+href="http://en.wikipedia.org/wiki/Integer_factorization">integer 
+factorization</A>. When the primes are chosen appropriately, and <A 
+title="Big O notation" 
+href="http://en.wikipedia.org/wiki/Big_O_notation">O</A>(<A title=Logarithm 
+href="http://en.wikipedia.org/wiki/Logarithm">log</A> log <I>M</I>) lower-order 
+bits of each <I>x<SUB>n</SUB></I> are output, then in the limit as <I>M</I> 
+grows large, distinguishing the output bits from random will be at least as 
+difficult as factoring <I>M</I>.</P>
+<P>If <A title="Integer factorization" 
+href="http://en.wikipedia.org/wiki/Integer_factorization">integer 
+factorization</A> is difficult (as is suspected) then B.B.S. with large <I>M</I> 
+will have an output free from any nonrandom patterns that can be discovered with 
+any reasonable amount of calculation. This makes it as secure as other 
+encryption technologies tied to the factorization problem, such as <A title=RSA 
+href="http://en.wikipedia.org/wiki/RSA">RSA encryption</A>.</P>
+<P><A id=Example name=Example></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: Example" 
+href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=edit&amp;section=2">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Example</SPAN></H2>
+<P>Let <I>p=11</I>, <I>q=19</I> and <I>s=3</I>. We can expect to get a large 
+cycle length for those small numbers, because gcd(φ(<I>p</I>-1), 
+φ(<I>q</I>-1))=2. The generator starts to evaluate <I>x</I><SUB>0</SUB> by using 
+<I>x</I> <SUB>-1</SUB>=<I>s</I> and creates the sequence <I>x</I><SUB>0</SUB>, 
+<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>, ... <I>x</I><SUB>5</SUB>= 9, 81, 82, 
+36, 42, 92. If the bit parity is used to determine the output, then the output 
+bits are 1 1 0 0 0 0.</P>
+<P><A id=References name=References></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: References" 
+href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=edit&amp;section=3">edit</A>]</SPAN> 
+<SPAN class=mw-headline>References</SPAN></H2>
+<UL>
+  <LI>Lenore Blum, Manuel Blum, and Michael Shub. "A Simple Unpredictable 
+  Pseudo-Random Number Generator", <I>SIAM Journal on Computing</I>, volume 15, 
+  pages 364–383, May 1986. 
+  <LI>Lenore Blum, Manuel Blum, and Michael Shub. "Comparison of two 
+  pseudo-random number generators", <I>Advances in Cryptology: Proceedings of 
+  Crypto '82</I>. Available as <A class="external text" 
+  title=http://dsns.csie.nctu.edu.tw/research/crypto/HTML/PDF/C82/61.PDF 
+  href="http://dsns.csie.nctu.edu.tw/research/crypto/HTML/PDF/C82/61.PDF" 
+  rel=nofollow>PDF</A>. 
+  <LI>Martin Geisler, Mikkel Krøigård, and Andreas Danielsen. "About Random 
+  Bits", December 2004. Available as <A class="external text" 
+  title=http://daimi.au.dk/~mg/mamian/random-bits.pdf 
+  href="http://daimi.au.dk/~mg/mamian/random-bits.pdf" rel=nofollow>PDF</A> and 
+  <A class="external text" title=http://daimi.au.dk/~mg/mamian/random-bits.ps.gz 
+  href="http://daimi.au.dk/~mg/mamian/random-bits.ps.gz" rel=nofollow>Gzipped 
+  Postscript</A>. </LI></UL>
+<P><A id=External_links name=External_links></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: External links" 
+href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=edit&amp;section=4">edit</A>]</SPAN> 
+<SPAN class=mw-headline>External links</SPAN></H2>
+<UL>
+  <LI><A class="external text" title=http://firefly.is-a-geek.org/gmpbbs/ 
+  href="http://firefly.is-a-geek.org/gmpbbs/" rel=nofollow>GMPBBS</A> - a <A 
+  title="GNU Multi-Precision Library" 
+  href="http://en.wikipedia.org/wiki/GNU_Multi-Precision_Library">GMP</A>-based 
+  implementation of Blum Blum Shub. 
+  <LI><A class="external text" title=http://code.google.com/p/javarng/ 
+  href="http://code.google.com/p/javarng/" rel=nofollow>An implementation in 
+  Java</A> 
+  <LI><A class="external text" 
+  title=http://www.ciphersbyritter.com/NEWS2/TESTSBBS.HTM 
+  href="http://www.ciphersbyritter.com/NEWS2/TESTSBBS.HTM" 
+  rel=nofollow>Randomness tests</A> </LI></UL><!-- 
+NewPP limit report
+Preprocessor node count: 36/1000000
+Post-expand include size: 0/2048000 bytes
+Template argument size: 0/2048000 bytes
+Expensive parser function count: 0/500
+--><!-- Saved in parser cache with key enwiki:pcache:idhash:39599-0!1!0!default!!en!2 and timestamp 20080707030950 -->
+<DIV class=printfooter>Retrieved from "<A 
+href="http://en.wikipedia.org/wiki/Blum_Blum_Shub">http://en.wikipedia.org/wiki/Blum_Blum_Shub</A>"</DIV>
+<DIV class=catlinks id=catlinks>
+<DIV id=mw-normal-catlinks><A title=Special:Categories 
+href="http://en.wikipedia.org/wiki/Special:Categories">Categories</A>: <SPAN 
+dir=ltr><A title="Category:Pseudorandom number generators" 
+href="http://en.wikipedia.org/wiki/Category:Pseudorandom_number_generators">Pseudorandom 
+number generators</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Cryptographically secure pseudorandom number generators" 
+href="http://en.wikipedia.org/wiki/Category:Cryptographically_secure_pseudorandom_number_generators">Cryptographically 
+secure pseudorandom number generators</A></SPAN></DIV></DIV><!-- end content -->
+<DIV class=visualClear></DIV></DIV></DIV></DIV>
+<DIV id=column-one>
+<DIV class=portlet id=p-cactions>
+<H5>Views</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=selected id=ca-nstab-main><A title="View the content page [c]" 
+  accessKey=c href="http://en.wikipedia.org/wiki/Blum_Blum_Shub">Article</A> 
+  <LI id=ca-talk><A title="Discussion about the content page [t]" accessKey=t 
+  href="http://en.wikipedia.org/wiki/Talk:Blum_Blum_Shub">Discussion</A> 
+  <LI id=ca-edit><A 
+  title="You can edit this page. Please use the preview button before saving. [e]" 
+  accessKey=e 
+  href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=edit">Edit 
+  this page</A> 
+  <LI id=ca-history><A title="Past versions of this page [h]" accessKey=h 
+  href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;action=history">History</A> 
+  </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-personal>
+<H5>Personal tools</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=pt-login><A 
+  title="You are encouraged to log in; however, it is not mandatory. [o]" 
+  accessKey=o 
+  href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Blum_Blum_Shub">Log 
+  in / create account</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-logo><A title="Visit the main page [z]" 
+style="BACKGROUND-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png)" 
+accessKey=z href="http://en.wikipedia.org/wiki/Main_Page"></A></DIV>
+<SCRIPT type=text/javascript> if (window.isMSIE55) fixalpha(); </SCRIPT>
+
+<DIV class="generated-sidebar portlet" id=p-navigation>
+<H5>Navigation</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-mainpage><A title="Visit the main page [z]" accessKey=z 
+  href="http://en.wikipedia.org/wiki/Main_Page">Main Page</A> 
+  <LI id=n-Contents><A title="Guides to browsing Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Portal:Contents">Contents</A> 
+  <LI id=n-featuredcontent><A 
+  href="http://en.wikipedia.org/wiki/Portal:Featured_content">Featured 
+  content</A> 
+  <LI id=n-currentevents><A 
+  title="Find background information on current events" 
+  href="http://en.wikipedia.org/wiki/Portal:Current_events">Current events</A> 
+  <LI id=n-randompage><A title="Load a random article [x]" accessKey=x 
+  href="http://en.wikipedia.org/wiki/Special:Random">Random article</A> 
+</LI></UL></DIV></DIV>
+<DIV class="generated-sidebar portlet" id=p-interaction>
+<H5>Interaction</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-aboutsite><A 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=n-portal><A 
+  title="About the project, what you can do, where to find things" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Community_Portal">Community 
+  portal</A> 
+  <LI id=n-recentchanges><A title="The list of recent changes in the wiki [r]" 
+  accessKey=r href="http://en.wikipedia.org/wiki/Special:RecentChanges">Recent 
+  changes</A> 
+  <LI id=n-contact><A title="How to contact Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</A> 
+
+  <LI id=n-sitesupport><A title="Support us" 
+  href="http://wikimediafoundation.org/wiki/Donate">Donate to Wikipedia</A> 
+  <LI id=n-help><A title="Guidance on how to use and edit Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Help:Contents">Help</A> 
+</LI></UL></DIV></DIV>
+<DIV class=portlet id=p-search>
+<H5><LABEL for=searchInput>Search</LABEL></H5>
+<DIV class=pBody id=searchBody>
+<FORM id=searchform action=/wiki/Special:Search>
+<DIV><INPUT id=searchInput title="Search Wikipedia [f]" accessKey=f name=search> 
+<INPUT class=searchButton id=searchGoButton title="Go to a page with this exact name if one exists" type=submit value=Go name=go>&nbsp; 
+<INPUT class=searchButton id=mw-searchButton title="Search the wiki for this text" type=submit value=Search name=fulltext> 
+</DIV></FORM></DIV></DIV>
+<DIV class=portlet id=p-tb>
+<H5>Toolbox</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=t-whatlinkshere><A 
+  title="List of all English Wikipedia pages that link here [j]" accessKey=j 
+  href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Blum_Blum_Shub">What 
+  links here</A> 
+  <LI id=t-recentchangeslinked><A 
+  title="Recent changes in pages linked from this page [k]" accessKey=k 
+  href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Blum_Blum_Shub">Related 
+  changes</A> 
+  <LI id=t-upload><A title="Upload files [u]" accessKey=u 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Upload">Upload file</A> 
+  <LI id=t-specialpages><A title="List of all special pages [q]" accessKey=q 
+  href="http://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</A> 
+  <LI id=t-print><A title="Printable version of this page [p]" accessKey=p 
+  href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;printable=yes">Printable 
+  version</A> 
+  <LI id=t-permalink><A title="Permanent link to this version of the page" 
+  href="http://en.wikipedia.org/w/index.php?title=Blum_Blum_Shub&amp;oldid=224057253">Permanent 
+  link</A>
+  <LI id=t-cite><A 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Blum_Blum_Shub&amp;id=224057253">Cite 
+  this page</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-lang>
+<H5>Languages</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=interwiki-cs><A 
+  href="http://cs.wikipedia.org/wiki/Blum_Blum_Shub">Česky</A> 
+  <LI class=interwiki-de><A 
+  href="http://de.wikipedia.org/wiki/Blum-Blum-Shub-Generator">Deutsch</A> 
+  <LI class=interwiki-es><A 
+  href="http://es.wikipedia.org/wiki/Blum_Blum_Shub">Español</A> 
+  <LI class=interwiki-fr><A 
+  href="http://fr.wikipedia.org/wiki/Blum_Blum_Shub">Français</A> 
+  <LI class=interwiki-it><A 
+  href="http://it.wikipedia.org/wiki/Blum_Blum_Shub">Italiano</A> 
+  <LI class=interwiki-pl><A 
+  href="http://pl.wikipedia.org/wiki/Blum_Blum_Shub">Polski</A> 
+  <LI class=interwiki-ru><A 
+  href="http://ru.wikipedia.org/wiki/ÐÐ»Ð³Ð¾ÑÐ¸ÑÐ¼_ÐÐ»ÑÐ¼Ð°_â_ÐÐ»ÑÐ¼Ð°_â_Ð¨ÑÐ±Ð°">Русский</A> 
+
+  <LI class=interwiki-sl><A 
+  href="http://sl.wikipedia.org/wiki/Blum-Blum-Shubov_generator_psevdonakljuÄnih_Å¡tevil">Slovenščina</A> 
+  </LI></UL></DIV></DIV></DIV><!-- end of the left (by default at least) column -->
+<DIV class=visualClear></DIV>
+<DIV id=footer>
+<DIV id=f-poweredbyico><A href="http://www.mediawiki.org/"><IMG 
+alt="Powered by MediaWiki" 
+src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png"></A></DIV>
+<DIV id=f-copyrightico><A href="http://wikimediafoundation.org/"><IMG 
+alt="Wikimedia Foundation" 
+src="Blum Blum Shub - Wikipedia, the free encyclopedia_files/wikimedia-button.png" 
+border=0></A></DIV>
+<UL id=f-list>
+  <LI id=lastmod>This page was last modified on 7 July 2008, at 03:09. 
+  <LI id=copyright>All text is available under the terms of the <A 
+  class=internal title="Wikipedia:Text of the GNU Free Documentation License" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License">GNU 
+  Free Documentation License</A>. (See <B><A class=internal 
+  title=Wikipedia:Copyrights 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights">Copyrights</A></B> 
+  for details.) <BR>Wikipedia® is a registered trademark of the <A 
+  href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc</A>., a 
+  U.S. registered <A class=internal title=501(c)(3) 
+  href="http://en.wikipedia.org/wiki/501(c)#501.28c.29.283.29">501(c)(3)</A> <A 
+  href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</A> 
+  <A class=internal title="Non-profit organization" 
+  href="http://en.wikipedia.org/wiki/Non-profit_organization">nonprofit</A> <A 
+  title="Charitable organization" 
+  href="http://en.wikipedia.org/wiki/Charitable_organization">charity</A>.<BR>
+  <LI id=privacy><A title="wikimedia:Privacy policy" 
+  href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy policy</A> 
+  <LI id=about><A title=Wikipedia:About 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=disclaimer><A title="Wikipedia:General disclaimer" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</A> 
+  </LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>if (window.runOnloadHook) runOnloadHook();</SCRIPT>
+<!-- Served by srv162 in 0.048 secs. --></BODY></HTML>

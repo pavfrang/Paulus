@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42EA0F38-DC79-4AD5-B708-25CBFE45D65F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paulus.Forms</RootNamespace>
+    <AssemblyName>Paulus.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaSelector.cs" />
+    <Compile Include="Charting\ChartExtensions.cs" />
+    <Compile Include="Charting\ChartInfo.cs" />
+    <Compile Include="Charting\LabelUnit.cs" />
+    <Compile Include="Charting\Results.cs" />
+    <Compile Include="ControlExtensions.cs" />
+    <Compile Include="CursorExtensions.cs" />
+    <Compile Include="DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DoubleBufferedPanel.Designer.cs">
+      <DependentUpon>DoubleBufferedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DragDropper.cs" />
+    <Compile Include="ExtendedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedFormSettings.cs" />
+    <Compile Include="FolderSelectDialog.cs" />
+    <Compile Include="FormResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Hourglass.cs" />
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiMeasurementTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressChangedEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectangleAreaSelector.cs" />
+    <Compile Include="Reflector.cs" />
+    <Compile Include="RubberRectangleSelector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Collections\Paulus.Collections.csproj">
+      <Project>{2F097B47-1D8F-41B5-B2AE-844466312990}</Project>
+      <Name>Paulus.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Paulus.Common.csproj">
+      <Project>{404084FF-7C76-4489-97E7-7C89B73C7041}</Project>
+      <Name>Paulus.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drawing\Paulus.Drawing.csproj">
+      <Project>{57e064ef-968c-440d-8b31-7b825d1722f7}</Project>
+      <Name>Paulus.Drawing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\open_hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\closed_hand.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

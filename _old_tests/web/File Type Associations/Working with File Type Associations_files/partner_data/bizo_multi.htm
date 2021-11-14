@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head><body>
+<script language="JavaScript">
+try {
+
+var mapping = {	'smallbiz':'SBZ',
+				'sen_exec':'DTX',
+				'sen_mid':'DTY',
+				'occ_phy':'DUA',
+				'fa_it':'DUY',
+				'fa_mar':'DXA',
+				'cs_med':'DWW',
+				'cs_lar':'DWX',
+				'cs_xlar':'DWY',
+				'cs_f500':'DWZ',
+				'ind_bizser':'DWT',
+				'ind_cons':'DWP',
+				'ind_heal':'DWQ',
+				'ind_manu':'DWR',
+				'ind_soft':'DWU',
+				'ind_tele':'DWV',
+				'ind_trav':'DWS'};
+
+var params = [];
+var codes = [];
+var tpp_url = "";
+var protocol = "";
+
+
+var s = "?";
+if (document.referrer.indexOf("#") > -1) {
+  s = "#";
+}
+
+params = document.referrer.split(s);
+if(params[1]) {
+	params = params[1].split("&");
+}
+
+if ("https:" == window.location.protocol) {
+	protocol = "https://";
+	tpp_url = "https://an.secure.tacoda.net/an/tpp_ssl.html";
+} else {
+	protocol = "http://";
+	tpp_url = "http://an.tacoda.net/an/tpp.html";
+}
+
+for (var i = 0; i < params.length; i++) {
+	var vals = params[i].split("=");
+    if (vals.length == 2 && vals[0] == "u") {
+        var uval = vals[1].split(",");
+        for(var x = 0; x < uval.length; x++) {
+            var cc = getCode(uval[x]);
+            if(cc != "") {
+				codes.push(cc);
+			}
+        }
+    }
+}
+
+if(detectTID() == true) {
+	if(codes.length > 0) {
+		ANRTXR();
+	}
+} else {
+	rcall(protocol, "OTH");
+}
+} catch(e) {
+}
+
+function detectTID() {
+	var cookies = " " + document.cookie.replace(/=/, " ") + " ";
+	if(cookies.indexOf(" TID ") > -1) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function getCode(val) {
+	for(var idx in mapping) {
+		if(val.indexOf(idx) > -1) {
+			return mapping[idx];
+		}
+	}
+
+	return "";
+}
+
+function ANRTXR() {
+	if(codes.length > 0) {
+		// send next code over to RTX
+		rcall(protocol, codes.pop());
+	} else {
+		// call TPP
+		document.write("<ifr"+"ame width='0' height='0' frameborder='0' src='" + tpp_url + "'></ifr"+"ame>");
+	}
+}
+
+function rcall(protocol, cc) {
+	var url = protocol + "anrtx.tacoda.net/rtx/r.js?cmd=" + cc.toUpperCase() + "&si=18139&xs=1&pu=&v=5.0&cb=" + Math.floor(Math.random()*100000);    			
+	document.write("<scr"+"ipt src='" + url + "' language='JavaScript'></scr"+"ipt>");	
+}
+</script><script src="bizo_multi_data/r_002.js" language="JavaScript"></script><script src="bizo_multi_data/r.js" language="JavaScript"></script><script src="bizo_multi_data/r_003.js" language="JavaScript"></script><iframe
+ src="bizo_multi_data/tpp.htm" width="0" frameborder="0" height="0"></iframe>
+</body></html>

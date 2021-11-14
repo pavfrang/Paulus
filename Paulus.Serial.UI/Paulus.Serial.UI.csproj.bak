@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC38706A-AEDC-48EA-87F7-6454A4F02369}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paulus.Serial.UI</RootNamespace>
+    <AssemblyName>Paulus.Serial.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceCommanderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceCommanderControl.Designer.cs">
+      <DependentUpon>DeviceCommanderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceManagerExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceManagerExplorer.Designer.cs">
+      <DependentUpon>DeviceManagerExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceTimer.cs" />
+    <Compile Include="GasMixer\ConcentrationModeUI.cs" />
+    <Compile Include="GasMixer\GasMixerCommandTimer.cs" />
+    <Compile Include="GasMixer\GasMixerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GasMixer\GasMixerControl.Designer.cs">
+      <DependentUpon>GasMixerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GasMixer\PurgeModeUI.cs" />
+    <Compile Include="GasMixer\GasMixerRepositories.cs" />
+    <Compile Include="GasMixer\GasMixerUI.cs" />
+    <Compile Include="GasMixer\GridViewConcentrationUI.cs" />
+    <Compile Include="GasMixer\GridViewMfcsUI.cs" />
+    <Compile Include="GasMixer\GridViewPortsUI.cs" />
+    <Compile Include="GasMixer\GridViewPurgeUI.cs" />
+    <Compile Include="GasMixer\GridViewUI.cs" />
+    <Compile Include="GasMixer\MaintainPortsUI.cs" />
+    <Compile Include="InfusionPump\InfusionPumpCommandTimer.cs" />
+    <Compile Include="InfusionPump\InfusionPumpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfusionPump\InfusionPumpControl.Designer.cs">
+      <DependentUpon>InfusionPumpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfusionPump\InfusionPumpControls.cs" />
+    <Compile Include="InfusionPump\InfusionPumpUI.cs" />
+    <Compile Include="MessagesUI.cs" />
+    <Compile Include="SerialPortDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialPortDialog.Designer.cs">
+      <DependentUpon>SerialPortDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialPortSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SerialPortSelector.Designer.cs">
+      <DependentUpon>SerialPortSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditWithUnitComboBox.cs" />
+    <Compile Include="UnitConversionsLibrary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Collections\Paulus.Collections.csproj">
+      <Project>{2f097b47-1d8f-41b5-b2ae-844466312990}</Project>
+      <Name>Paulus.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Paulus.Common.csproj">
+      <Project>{7d366641-8956-4e7c-84ff-b5099c792c77}</Project>
+      <Name>Paulus.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IO\Paulus.IO.csproj">
+      <Project>{16dcc10b-e232-44d9-9edc-bb07061f13e2}</Project>
+      <Name>Paulus.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Paulus.DevExpressUI\Paulus.UI.csproj">
+      <Project>{a46f49c5-1392-48eb-ae14-636dc105c4be}</Project>
+      <Name>Paulus.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Serial\Paulus.Serial.csproj">
+      <Project>{3AEF28FC-A34C-48C7-9CEC-D51B9AB89468}</Project>
+      <Name>Paulus.Serial</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceCommanderControl.resx">
+      <DependentUpon>DeviceCommanderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceManagerExplorer.resx">
+      <DependentUpon>DeviceManagerExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GasMixer\GasMixerControl.resx">
+      <DependentUpon>GasMixerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfusionPump\InfusionPumpControl.resx">
+      <DependentUpon>InfusionPumpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerialPortDialog.resx">
+      <DependentUpon>SerialPortDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SerialPortSelector.resx">
+      <DependentUpon>SerialPortSelector.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

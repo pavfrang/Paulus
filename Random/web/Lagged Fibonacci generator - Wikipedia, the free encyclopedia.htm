@@ -1,0 +1,489 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0055)http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator -->
+<HTML lang=en dir=ltr xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Lagged Fibonacci generator - Wikipedia, the free encyclopedia</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META 
+content="Lagged Fibonacci generator,Articles with unsourced statements since April 2007,Articles with unsourced statements since June 2008,Binary operation,Bitwise,Boost library,FISH (cipher),Fibonacci sequence,Freeciv,Golden ratio,LFSR" 
+name=keywords><LINK title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=edit" 
+type=application/x-wiki rel=alternate><LINK href="/favicon.ico" 
+rel="shortcut icon"><LINK href="http://en.wikipedia.org/apple-touch-icon.png" 
+rel=apple-touch-icon><LINK title="Wikipedia (en)" href="/w/opensearch_desc.php" 
+type=application/opensearchdescription+xml rel=search><LINK 
+href="http://www.gnu.org/copyleft/fdl.html" rel=copyright><LINK 
+title="Wikipedia RSS Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss" 
+type=application/rss+xml rel=alternate><LINK title="Wikipedia Atom Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom" 
+type=application/atom+xml rel=alternate>
+<STYLE type=text/css media="screen, projection">@import url( /skins-1.5/common/shared.css?156 );
+@import url( /skins-1.5/monobook/main.css?156 );
+</STYLE>
+<LINK media=print 
+href="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/commonPrint.css" 
+type=text/css rel=stylesheet><!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?156";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?156";</style><![endif]--><!--[if IE 6]>
+<STYLE type=text/css>@import url( /skins-1.5/monobook/IE60Fixes.css?156 );
+</STYLE>
+<![endif]--><!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?156";</style><![endif]--><!--[if lt IE 7]>
+<SCRIPT 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/IEFixes.js" 
+type=text/javascript></SCRIPT>
+
+<META http-equiv=imagetoolbar content=no><![endif]-->
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgScript = "/w/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Lagged_Fibonacci_generator";
+var wgTitle = "Lagged Fibonacci generator";
+var wgAction = "view";
+var wgArticleId = "45619";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "218522872";
+var wgVersion = "1.13alpha";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgMWSuggestTemplate = "http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}";
+var wgDBname = "enwiki";
+var wgSearchNamespaces = [0];
+var wgMWSuggestMessages = ["with suggestions", "no suggestions"];
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/wikibits.js" 
+type=text/javascript><!-- wikibits js --></SCRIPT>
+<!-- Head Scripts -->
+<SCRIPT 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/ajax.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/mwsuggest.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/index.php" 
+type=text/javascript><!-- site js --></SCRIPT>
+
+<STYLE type=text/css>@import url( /w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=-&action=raw&gen=css&maxage=2678400 );
+</STYLE>
+
+<META content="MSHTML 6.00.2900.5512" name=GENERATOR></HEAD>
+<BODY class="mediawiki ns-0 ltr page-Lagged_Fibonacci_generator">
+<DIV id=globalWrapper>
+<DIV id=column-content>
+<DIV id=content><A id=top name=top></A>
+<DIV id=siteNotice>
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+document.writeln("\x3cp\x3e\x3c/p\x3e\n");
+-->
+</SCRIPT>
+</DIV>
+<H1 class=firstHeading>Lagged Fibonacci generator</H1>
+<DIV id=bodyContent>
+<H3 id=siteSub>From Wikipedia, the free encyclopedia</H3>
+<DIV id=contentSub></DIV>
+<DIV id=jump-to-nav>Jump to: <A 
+href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator#column-one">navigation</A>, 
+<A 
+href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator#searchInput">search</A></DIV><!-- start content -->
+<P>A <B>Lagged Fibonacci generator (LFG)</B> is an example of a <A 
+title="Pseudorandom number generator" 
+href="http://en.wikipedia.org/wiki/Pseudorandom_number_generator">pseudorandom 
+number generator</A>. This class of <A class=mw-redirect 
+title="Random number generator" 
+href="http://en.wikipedia.org/wiki/Random_number_generator">random number 
+generator</A> is aimed at being an improvement on the 'standard' <A 
+title="Linear congruential generator" 
+href="http://en.wikipedia.org/wiki/Linear_congruential_generator">linear 
+congruential generator</A>. These are based on a generalisation of the <A 
+class=mw-redirect title="Fibonacci sequence" 
+href="http://en.wikipedia.org/wiki/Fibonacci_sequence">Fibonacci 
+sequence</A>.</P>
+<P>The Fibonacci sequence may be described by the <A title="Recurrence relation" 
+href="http://en.wikipedia.org/wiki/Recurrence_relation">recurrence 
+relation</A>:</P>
+<DL>
+  <DD><SPAN class=texhtml><I>S</I><SUB><I>n</I></SUB> = <I>S</I><SUB><I>n</I> − 
+  1</SUB> + <I>S</I><SUB><I>n</I> − 2</SUB></SPAN> </DD></DL>
+<P>Hence, the new term is the sum of the last two terms in the sequence. This 
+can be generalised to the sequence:</P>
+<DL>
+  <DD><IMG class=tex 
+  alt="S_n \equiv S_{n-j} \star S_{n-k}  \pmod{m},   0 < j < k" 
+  src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/d8b26fd0a6fff8dbb39f7c3292237d04.png"> 
+  </DD></DL>
+<P>In which case, the new term is some combination of any two previous terms. m 
+is usually a power of 2 (m = 2<SUP>M</SUP>), often 2<SUP>32</SUP> or 
+2<SUP>64</SUP>. The <IMG class=tex alt=\star 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/23d64887f9c2add7a296e5b99acbbdfb.png"> 
+operator denotes a general <A title="Binary operation" 
+href="http://en.wikipedia.org/wiki/Binary_operation">binary operation</A>. This 
+may be either addition, subtraction, multiplication, or the <A title=Bitwise 
+href="http://en.wikipedia.org/wiki/Bitwise">bitwise</A> arithmetic exclusive-or 
+operator (<A class=mw-redirect title=XOR 
+href="http://en.wikipedia.org/wiki/XOR">XOR</A>). The theory of this type of 
+generator is rather complex, and it may not be sufficient simply to choose 
+random values for j and k. These generators also tend to be very sensitive to 
+initialisation.</P>
+<P>Generators of this type employ k words of state (they 'remember' the last k 
+values).</P>
+<P>If the operation used is addition, then the generator is described as an 
+<I>Additive Lagged Fibonacci Generator</I> or ALFG, if multiplication is used, 
+it is a <I>Multiplicative Lagged Fibonacci Generator</I> or MLFG, and if the XOR 
+operation is used, it is called a <I>Two-tap <A class=new 
+title="Generalised Feedback Shift Register (page does not exist)" 
+href="http://en.wikipedia.org/w/index.php?title=Generalised_Feedback_Shift_Register&amp;action=edit&amp;redlink=1">Generalised 
+Feedback Shift Register</A></I> or GFSR. The <A title="Mersenne twister" 
+href="http://en.wikipedia.org/wiki/Mersenne_twister">Mersenne twister</A> 
+algorithm is a variation on a GFSR. The GFSR is also related to the <I>Linear 
+Feedback Shift Register</I>, or <A class=mw-redirect title=LFSR 
+href="http://en.wikipedia.org/wiki/LFSR">LFSR</A>.</P>
+<TABLE class=toc id=toc summary=Contents>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV id=toctitle>
+      <H2>Contents</H2></DIV>
+      <UL>
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator#Properties_of_Lagged_Fibonacci_Generators"><SPAN 
+        class=tocnumber>1</SPAN> <SPAN class=toctext>Properties of Lagged 
+        Fibonacci Generators</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator#Problems_with_LFGs"><SPAN 
+        class=tocnumber>2</SPAN> <SPAN class=toctext>Problems with 
+        LFGs</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator#Usage"><SPAN 
+        class=tocnumber>3</SPAN> <SPAN class=toctext>Usage</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator#See_also"><SPAN 
+        class=tocnumber>4</SPAN> <SPAN class=toctext>See also</SPAN></A> 
+    </LI></UL></TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</SCRIPT>
+
+<P><A id=Properties_of_Lagged_Fibonacci_Generators 
+name=Properties_of_Lagged_Fibonacci_Generators></A></P>
+<H3><SPAN class=editsection>[<A 
+title="Edit section: Properties of Lagged Fibonacci Generators" 
+href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=edit&amp;section=1">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Properties of Lagged Fibonacci Generators</SPAN></H3>
+<P><B>Lagged Fibonacci generators</B> have a maximum period of (2<SUP>k</SUP> - 
+1)*2<SUP>M-1</SUP> if addition or subtraction is used, and (2<SUP>k</SUP>-1) if 
+exclusive-or operations are used to combine the previous values. If, on the 
+other hand, multiplication is used, the maximum period is (2<SUP>k</SUP> - 
+1)*2<SUP>M-3</SUP>, or 1/4 of period of the additive case.</P>
+<P>For the generator to achieve this maximum period, the polynomial:</P>
+<DL>
+  <DD>y = x<SUP>k</SUP> + x<SUP>j</SUP> + 1 </DD></DL>
+<P>must be <A title="Primitive polynomial" 
+href="http://en.wikipedia.org/wiki/Primitive_polynomial">primitive</A> over the 
+integers mod 2. Values of j and k satisfying this constraint have been published 
+in the literature. Popular pairs are:</P>
+<DL>
+  <DD>{j = 7, k = 10}, {j = 5, k = 17}, {j = 24, k = 55}, {j = 65, k = 71}, {j = 
+  128, k = 159} <A class="external autonumber" 
+  title=http://www.ccs.uky.edu/csep/RN/RN.html 
+  href="http://www.ccs.uky.edu/csep/RN/RN.html" rel=nofollow>[1]</A>, {j = 6, k 
+  = 31}, {j = 31, k = 63}, {j = 97, k = 127}, {j = 353, k = 521}, {j = 168, k = 
+  521}, {j = 334, k = 607}, {j = 273, k = 607}, {j = 418, k = 1279} <A 
+  class="external autonumber" 
+  title=http://www.nersc.gov/nusers/resources/software/libs/math/random/www2.0/DOCS/www/parameters.html 
+  href="http://www.nersc.gov/nusers/resources/software/libs/math/random/www2.0/DOCS/www/parameters.html" 
+  rel=nofollow>[2]</A> </DD></DL>
+<P>Another list of possible values for j and k is on page 28 of volume 2 of 
+<I><A title="The Art of Computer Programming" 
+href="http://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">The Art of 
+Computer Programming</A></I>; the values listed above are in bold face:</P>
+<DL>
+  <DD>(1,2), (1,3), (2,3), (1,4), (3,4), (2,5), (3,5), (1,6), (5,6), (1,7), 
+  (6,7), (3,7), (4,7), (4,9), (5,9), (3,10), <B>(7,10)</B>, (2,11), (9,11), 
+  (1,15), (14,15), (4,15), (11,15), (7,15), (8,15), (3,17), (14,17), 
+  <B>(5,17)</B>, (12,17), (6,17), (11,17), (7,18), (11,18), (3,20), (17,20), 
+  (2,21), (19,21), (1,22), (21,22), (5,23), (18,23), (9,23), (14,23), (3,25), 
+  (22,25), (7,25), (18,25), (3,28), (25,28), (9,28), (19,28), (13,28), (15,28), 
+  (2,29), (27,29), (3,31), (28,31), <B>(6,31)</B>, (25,31), (7,31), (24,31), 
+  (13,31), (18,31), (13,33), (20,33), (2,35), (33,35), (11,36), (25,36), (4,39), 
+  (35,39), (8,39), (31,39), (14,39), (25,39), (3,41), (38,41), (20,41), (21,41), 
+  (5,47), (42,47), (14,47), (33,47), (20,47), (27,47), (21,47), (26,47), (9,49), 
+  (40,49), (12,49), (37,49), (15,49), (34,49), (22,49), (27,49), (3,52), 
+  (49,52), (19,52), (33,52), (21,52), (31,52), <B>(24,55)</B>, (31,55), (7,57), 
+  (50,57), (22,57), (35,57), (19,58), (39,58), (1,60), (59,60), (11,60), 
+  (49,60), (1,63), (62,63), (5,63), (58,63), <B>(31,63)</B>, (32,63), (18,65), 
+  (47,65), (32,65), (33,65), (9,68), (59,68), (33,68), (35,68), (6,71), 
+  <B>(65,71)</B>, (9,71), (62,71), (18,71), (53,71), (20,71), (51,71), (35,71), 
+  (36,71), (25,73), (48,73), (28,73), (45,73), (31,73), (42,73), (9,79), 
+  (70,79), (19,79), (60,79), (4,81), (77,81), (16,81), (65,81), (35,81), 
+  (46,81), (13,84), (71,84), (13,87), (74,87), (38,89), (51,89), (2,93), 
+  (91,93), (21,94), (73,94), (11,95), (84,95), (17,95), (78,95), (6,97), 
+  (91,97), (12,97), (85,97), (33,97), (64,97), (34,97), (63,97), (11,98), 
+  (87,98), (27,98), (71,98) </DD></DL>
+<P>Note that the smaller number have short periods (only a few "random" numbers 
+are generated before the first "random" number is repeated and the sequence 
+restarts).</P>
+<P>It is required that at least one of the first k values chosen to initialise 
+the generator be odd.</P>
+<P>It has been suggested that good ratios between j and k are approximately the 
+<A title="Golden ratio" href="http://en.wikipedia.org/wiki/Golden_ratio">golden 
+ratio</A><SUP class="noprint Template-Fact"><SPAN 
+title="This claim needs references to reliable sources&nbsp;since April 2007" 
+style="WHITE-SPACE: nowrap">[<I><A title="Wikipedia:Citation needed" 
+href="http://en.wikipedia.org/wiki/Wikipedia:Citation_needed">citation 
+needed</A></I>]</SPAN></SUP>.</P>
+<P><A id=Problems_with_LFGs name=Problems_with_LFGs></A></P>
+<H3><SPAN class=editsection>[<A title="Edit section: Problems with LFGs" 
+href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=edit&amp;section=2">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Problems with LFGs</SPAN></H3>
+<P>The initialisation of LFGs is a very complex problem. The output of LFGs is 
+very sensitive to initial conditions, and statistical defects may appear 
+initially but also periodically in the output sequence unless extreme care is 
+taken<SUP class="noprint Template-Fact"><SPAN 
+title="This claim needs references to reliable sources&nbsp;since June 2008" 
+style="WHITE-SPACE: nowrap">[<I><A title="Wikipedia:Citation needed" 
+href="http://en.wikipedia.org/wiki/Wikipedia:Citation_needed">citation 
+needed</A></I>]</SPAN></SUP>. Another potential problem with LFGs is that the 
+mathematical theory behind them is incomplete, making it necessary to rely on 
+statistical tests rather than theoretical performance. These reasons, combined 
+with the existence of the free and very high-quality <A title="Mersenne twister" 
+href="http://en.wikipedia.org/wiki/Mersenne_twister">Mersenne twister</A> 
+algorithm tend to make 'home-brewed' implementations of LFGs less than desirable 
+in the presence of superior alternatives.</P>
+<P><A id=Usage name=Usage></A></P>
+<H3><SPAN class=editsection>[<A title="Edit section: Usage" 
+href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=edit&amp;section=3">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Usage</SPAN></H3>
+<UL>
+  <LI><A title=Freeciv href="http://en.wikipedia.org/wiki/Freeciv">Freeciv</A> 
+  uses a lagged Fibonacci generator with {j = 24, k = 55} for its random number 
+  generator. 
+  <LI>The <A class=mw-redirect title="Boost library" 
+  href="http://en.wikipedia.org/wiki/Boost_library">Boost library</A> includes 
+  an implementation of a lagged Fibonacci generator. 
+  <LI><A title=MATLAB href="http://en.wikipedia.org/wiki/MATLAB">MATLAB</A> uses 
+  a {j=??, k = 32} generator for its rand() function (<A class="external text" 
+  title=http://www.mathworks.com/support/solutions/data/1-169M3.html?solution=1-169M3 
+  href="http://www.mathworks.com/support/solutions/data/1-169M3.html?solution=1-169M3" 
+  rel=nofollow>info here</A>). 
+  <LI>The <A title="Oracle Database" 
+  href="http://en.wikipedia.org/wiki/Oracle_Database">Oracle Database</A> 
+  implements this generator in its DBMS_RANDOM package (available in Oracle 8 
+  and newer versions). </LI></UL>
+<P><A id=See_also name=See_also></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: See also" 
+href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=edit&amp;section=4">edit</A>]</SPAN> 
+<SPAN class=mw-headline>See also</SPAN></H2>
+<UL>
+  <LI><A title="Linear congruential generator" 
+  href="http://en.wikipedia.org/wiki/Linear_congruential_generator">Linear 
+  congruential generator</A> 
+  <LI><A title="Mersenne twister" 
+  href="http://en.wikipedia.org/wiki/Mersenne_twister">Mersenne twister</A> 
+  <LI><A title="FISH (cipher)" 
+  href="http://en.wikipedia.org/wiki/FISH_(cipher)">FISH (cipher)</A> 
+  <LI><A class=mw-redirect title="Pike (cryptography)" 
+  href="http://en.wikipedia.org/wiki/Pike_(cryptography)">Pike</A> 
+  <LI><A title="VIC cipher" href="http://en.wikipedia.org/wiki/VIC_cipher">VIC 
+  cipher</A> </LI></UL><!-- 
+NewPP limit report
+Preprocessor node count: 176/1000000
+Post-expand include size: 2243/2048000 bytes
+Template argument size: 653/2048000 bytes
+Expensive parser function count: 2/500
+--><!-- Saved in parser cache with key enwiki:pcache:idhash:45619-0!1!0!default!!en!2 and timestamp 20080622032426 -->
+<DIV class=printfooter>Retrieved from "<A 
+href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator">http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator</A>"</DIV>
+<DIV class=catlinks id=catlinks>
+<DIV id=mw-normal-catlinks><A title=Special:Categories 
+href="http://en.wikipedia.org/wiki/Special:Categories">Categories</A>: <SPAN 
+dir=ltr><A title="Category:Pseudorandom number generators" 
+href="http://en.wikipedia.org/wiki/Category:Pseudorandom_number_generators">Pseudorandom 
+number generators</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Fibonacci numbers" 
+href="http://en.wikipedia.org/wiki/Category:Fibonacci_numbers">Fibonacci 
+numbers</A></SPAN></DIV>
+<DIV class=mw-hidden-cats-hidden id=mw-hidden-catlinks>Hidden categories: <SPAN 
+dir=ltr><A title="Category:All articles with unsourced statements" 
+href="http://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements">All 
+articles with unsourced statements</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Articles with unsourced statements since April 2007" 
+href="http://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_since_April_2007">Articles 
+with unsourced statements since April 2007</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Articles with unsourced statements since June 2008" 
+href="http://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_since_June_2008">Articles 
+with unsourced statements since June 2008</A></SPAN></DIV></DIV><!-- end content -->
+<DIV class=visualClear></DIV></DIV></DIV></DIV>
+<DIV id=column-one>
+<DIV class=portlet id=p-cactions>
+<H5>Views</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=selected id=ca-nstab-main><A title="View the content page [c]" 
+  accessKey=c 
+  href="http://en.wikipedia.org/wiki/Lagged_Fibonacci_generator">Article</A> 
+  <LI id=ca-talk><A title="Discussion about the content page [t]" accessKey=t 
+  href="http://en.wikipedia.org/wiki/Talk:Lagged_Fibonacci_generator">Discussion</A> 
+
+  <LI id=ca-edit><A 
+  title="You can edit this page. Please use the preview button before saving. [e]" 
+  accessKey=e 
+  href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=edit">Edit 
+  this page</A> 
+  <LI id=ca-history><A title="Past versions of this page [h]" accessKey=h 
+  href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;action=history">History</A> 
+  </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-personal>
+<H5>Personal tools</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=pt-login><A 
+  title="You are encouraged to log in; however, it is not mandatory. [o]" 
+  accessKey=o 
+  href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Lagged_Fibonacci_generator">Log 
+  in / create account</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-logo><A title="Visit the main page [z]" 
+style="BACKGROUND-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png)" 
+accessKey=z href="http://en.wikipedia.org/wiki/Main_Page"></A></DIV>
+<SCRIPT type=text/javascript> if (window.isMSIE55) fixalpha(); </SCRIPT>
+
+<DIV class="generated-sidebar portlet" id=p-navigation>
+<H5>Navigation</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-mainpage><A title="Visit the main page [z]" accessKey=z 
+  href="http://en.wikipedia.org/wiki/Main_Page">Main Page</A> 
+  <LI id=n-Contents><A title="Guides to browsing Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Portal:Contents">Contents</A> 
+  <LI id=n-featuredcontent><A 
+  href="http://en.wikipedia.org/wiki/Portal:Featured_content">Featured 
+  content</A> 
+  <LI id=n-currentevents><A 
+  title="Find background information on current events" 
+  href="http://en.wikipedia.org/wiki/Portal:Current_events">Current events</A> 
+  <LI id=n-randompage><A title="Load a random article [x]" accessKey=x 
+  href="http://en.wikipedia.org/wiki/Special:Random">Random article</A> 
+</LI></UL></DIV></DIV>
+<DIV class="generated-sidebar portlet" id=p-interaction>
+<H5>Interaction</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-aboutsite><A 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=n-portal><A 
+  title="About the project, what you can do, where to find things" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Community_Portal">Community 
+  portal</A> 
+  <LI id=n-recentchanges><A title="The list of recent changes in the wiki [r]" 
+  accessKey=r href="http://en.wikipedia.org/wiki/Special:RecentChanges">Recent 
+  changes</A> 
+  <LI id=n-contact><A title="How to contact Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</A> 
+
+  <LI id=n-sitesupport><A title="Support us" 
+  href="http://wikimediafoundation.org/wiki/Donate">Donate to Wikipedia</A> 
+  <LI id=n-help><A title="Guidance on how to use and edit Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Help:Contents">Help</A> 
+</LI></UL></DIV></DIV>
+<DIV class=portlet id=p-search>
+<H5><LABEL for=searchInput>Search</LABEL></H5>
+<DIV class=pBody id=searchBody>
+<FORM id=searchform action=/wiki/Special:Search>
+<DIV><INPUT id=searchInput title="Search Wikipedia [f]" accessKey=f name=search> 
+<INPUT class=searchButton id=searchGoButton title="Go to a page with this exact name if one exists" type=submit value=Go name=go>&nbsp; 
+<INPUT class=searchButton id=mw-searchButton title="Search the wiki for this text" type=submit value=Search name=fulltext> 
+</DIV></FORM></DIV></DIV>
+<DIV class=portlet id=p-tb>
+<H5>Toolbox</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=t-whatlinkshere><A 
+  title="List of all English Wikipedia pages that link here [j]" accessKey=j 
+  href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Lagged_Fibonacci_generator">What 
+  links here</A> 
+  <LI id=t-recentchangeslinked><A 
+  title="Recent changes in pages linked from this page [k]" accessKey=k 
+  href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Lagged_Fibonacci_generator">Related 
+  changes</A> 
+  <LI id=t-upload><A title="Upload files [u]" accessKey=u 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Upload">Upload file</A> 
+  <LI id=t-specialpages><A title="List of all special pages [q]" accessKey=q 
+  href="http://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</A> 
+  <LI id=t-print><A title="Printable version of this page [p]" accessKey=p 
+  href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;printable=yes">Printable 
+  version</A> 
+  <LI id=t-permalink><A title="Permanent link to this version of the page" 
+  href="http://en.wikipedia.org/w/index.php?title=Lagged_Fibonacci_generator&amp;oldid=218522872">Permanent 
+  link</A>
+  <LI id=t-cite><A 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Lagged_Fibonacci_generator&amp;id=218522872">Cite 
+  this page</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-lang>
+<H5>Languages</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=interwiki-it><A 
+  href="http://it.wikipedia.org/wiki/Generatore_di_Fibonacci_ritardato">Italiano</A> 
+
+  <LI class=interwiki-pl><A 
+  href="http://pl.wikipedia.org/wiki/Generator_Fibonacciego">Polski</A> 
+  <LI class=interwiki-ru><A 
+  href="http://ru.wikipedia.org/wiki/ÐÐµÑÐ¾Ð´_Ð¤Ð¸Ð±Ð¾Ð½Ð°ÑÑÐ¸_Ñ_Ð·Ð°Ð¿Ð°Ð·Ð´ÑÐ²Ð°Ð½Ð¸ÑÐ¼Ð¸">Русский</A> 
+  </LI></UL></DIV></DIV></DIV><!-- end of the left (by default at least) column -->
+<DIV class=visualClear></DIV>
+<DIV id=footer>
+<DIV id=f-poweredbyico><A href="http://www.mediawiki.org/"><IMG 
+alt="Powered by MediaWiki" 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png"></A></DIV>
+<DIV id=f-copyrightico><A href="http://wikimediafoundation.org/"><IMG 
+alt="Wikimedia Foundation" 
+src="Lagged Fibonacci generator - Wikipedia, the free encyclopedia_files/wikimedia-button.png" 
+border=0></A></DIV>
+<UL id=f-list>
+  <LI id=lastmod>This page was last modified on 11 June 2008, at 00:44. 
+  <LI id=copyright>All text is available under the terms of the <A 
+  class=internal title="Wikipedia:Text of the GNU Free Documentation License" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License">GNU 
+  Free Documentation License</A>. (See <B><A class=internal 
+  title=Wikipedia:Copyrights 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights">Copyrights</A></B> 
+  for details.) <BR>Wikipedia® is a registered trademark of the <A 
+  href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc</A>., a 
+  U.S. registered <A class=internal title=501(c)(3) 
+  href="http://en.wikipedia.org/wiki/501(c)#501.28c.29.283.29">501(c)(3)</A> <A 
+  href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</A> 
+  <A class=internal title="Non-profit organization" 
+  href="http://en.wikipedia.org/wiki/Non-profit_organization">nonprofit</A> <A 
+  title="Charitable organization" 
+  href="http://en.wikipedia.org/wiki/Charitable_organization">charity</A>.<BR>
+  <LI id=privacy><A title="wikimedia:Privacy policy" 
+  href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy policy</A> 
+  <LI id=about><A title=Wikipedia:About 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=disclaimer><A title="Wikipedia:General disclaimer" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</A> 
+  </LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>if (window.runOnloadHook) runOnloadHook();</SCRIPT>
+<!-- Served by srv186 in 0.058 secs. --></BODY></HTML>

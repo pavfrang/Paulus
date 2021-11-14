@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AEF28FC-A34C-48C7-9CEC-D51B9AB89468}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paulus.Serial</RootNamespace>
+    <AssemblyName>Paulus.Serial</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arduino\ArduinoCommander.cs" />
+    <Compile Include="Automation.cs" />
+    <Compile Include="Bosch\BoschCommander.cs" />
+    <Compile Include="Bosch\BoschRecorder.cs" />
+    <Compile Include="Bosch\BoschSensor.cs" />
+    <Compile Include="Device.cs" />
+    <Compile Include="DeviceCommander.cs" />
+    <Compile Include="DeviceImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeviceImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceManager.cs" />
+    <Compile Include="DeviceSettingsBase.cs" />
+    <Compile Include="DeviceUIBase.cs" />
+    <Compile Include="DownTino\DownTinoCommander.cs" />
+    <Compile Include="DownTino\DownTino.cs" />
+    <Compile Include="DownTino\DownTinoRecorder.cs" />
+    <Compile Include="Dropletino\SensorRelaysCommander.cs" />
+    <Compile Include="Dropletino\SensorRelaysArduinoSimulator.cs" />
+    <Compile Include="Dropletino\SensorRelaysRecorder.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Flaps\Flap3Commander.cs" />
+    <Compile Include="Bosch\BoschArduinoSimulator.cs" />
+    <Compile Include="Flaps\Flap3Chart.cs" />
+    <Compile Include="Flaps\Flap3Recorder.cs" />
+    <Compile Include="Fluke\FlukeRecorder.cs" />
+    <Compile Include="Fluke\Fluke.cs" />
+    <Compile Include="Fluke\FlukeSimulator.cs" />
+    <Compile Include="Fluke\FlukeCommander.cs" />
+    <Compile Include="GasMixer\Cylinder.cs" />
+    <Compile Include="GasMixer\CylinderComponent.cs" />
+    <Compile Include="GasMixer\CylinderLibrary.cs" />
+    <Compile Include="GasMixer\Gas.cs" />
+    <Compile Include="GasMixer\GasComponent.cs" />
+    <Compile Include="GasMixer\GasMixer.cs" />
+    <Compile Include="GasMixer\GasMixerCommander.cs" />
+    <Compile Include="GasMixer\GasMixerCommands.cs" />
+    <Compile Include="GasMixer\GasMixerException.cs" />
+    <Compile Include="GasMixer\GasMixerSettings.cs" />
+    <Compile Include="GasMixer\GasMixerSettingsDataTables.cs" />
+    <Compile Include="GasMixer\GasMixture.cs" />
+    <Compile Include="DeviceManagerRecorder.cs" />
+    <Compile Include="HeatersFanSupply\HeatersFanSupply.cs" />
+    <Compile Include="InfusionPump\InfusionPumpCommands.cs" />
+    <Compile Include="InfusionPump\InfusionPumpException.cs" />
+    <Compile Include="InfusionPump\InfusionPumpSettings.cs" />
+    <Compile Include="InfusionPump\Syringe.cs" />
+    <Compile Include="InfusionPump\SyringeLiquid.cs" />
+    <Compile Include="InvalidUnitException.cs" />
+    <Compile Include="Library.cs" />
+    <Compile Include="GasMixer\MFC.cs" />
+    <Compile Include="GasMixer\Port.cs" />
+    <Compile Include="GasMixer\SimpleGas.cs" />
+    <Compile Include="GasMixer\UnitConversions.cs" />
+    <Compile Include="GasMixer\Warning.cs" />
+    <Compile Include="HeatersFanSupply\HeatersFanSupplyArduinoSimulator.cs" />
+    <Compile Include="Dropletino\SensorRelays.cs" />
+    <Compile Include="HeatersFanSupply\HeatersFanSupplyCommander.cs" />
+    <Compile Include="HeatersFanSupply\HeatersFanSupplyRecorder.cs" />
+    <Compile Include="InfusionPump\InfusionPumpCommander.cs" />
+    <Compile Include="Kern\KernScaleAgent.cs" />
+    <Compile Include="Kern\KernArduinoAgent.cs" />
+    <Compile Include="Kern\KernArduinoSimulator.cs" />
+    <Compile Include="Kern\KernRecorder.cs" />
+    <Compile Include="Kern\KernScale.cs" />
+    <Compile Include="LatNI\LatNI.cs" />
+    <Compile Include="LatNI\LatNIAgent.cs" />
+    <Compile Include="LatNI\LatNISystemSimulator.cs" />
+    <Compile Include="LibraryItem.cs" />
+    <Compile Include="LiveChart.cs" />
+    <Compile Include="LiveSeries.cs" />
+    <Compile Include="SerialPortSettings.cs" />
+    <Compile Include="Recorder.cs" />
+    <Compile Include="SerialCommand.cs" />
+    <Compile Include="SerialCommandBatch.cs" />
+    <Compile Include="SerialDevice.cs" />
+    <Compile Include="Flaps\Flap.cs" />
+    <Compile Include="Flaps\Flap3ArduinoSimulator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialPortExtensions.cs" />
+    <Compile Include="SerialPortFixer.cs" />
+    <Compile Include="SerialResponse.cs" />
+    <Compile Include="Signal.cs" />
+    <Compile Include="VaneIno\VaneIno.cs" />
+    <Compile Include="VaneIno\VaneInoCommander.cs" />
+    <Compile Include="VaneIno\VaneInoRecorder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Bosch\Arduino\Boschino.ino" />
+    <None Include="Flaps\Arduino\Klapetino.ino" />
+    <None Include="Flaps\Arduino\Klapetino_without_lib.ino" />
+    <None Include="Guide to Paulus.Serial.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Flaps\Arduino\Flap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Collections\Paulus.Collections.csproj">
+      <Project>{2f097b47-1d8f-41b5-b2ae-844466312990}</Project>
+      <Name>Paulus.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Paulus.Common.csproj">
+      <Project>{1d63c218-5f80-4702-b34d-d04854877251}</Project>
+      <Name>Paulus.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IO\Paulus.IO.csproj">
+      <Project>{16dcc10b-e232-44d9-9edc-bb07061f13e2}</Project>
+      <Name>Paulus.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceImages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeviceImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bosch\Arduino\DigitalPin.h" />
+    <None Include="Resources\infusion pump.png" />
+    <None Include="Resources\gasmixer.png" />
+    <None Include="Resources\arduino.png" />
+    <None Include="Kern\Arduino\kernduino code.ino" />
+    <Content Include="Kern\sample_data.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

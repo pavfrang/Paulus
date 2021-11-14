@@ -1,0 +1,374 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0047)http://en.wikipedia.org/wiki/Fortuna_%28PRNG%29 -->
+<HTML lang=en dir=ltr xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Fortuna (PRNG) - Wikipedia, the free encyclopedia</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.5512" name=GENERATOR>
+<META 
+content="Fortuna (PRNG),Advanced Encryption Standard,Block cipher,Bruce Schneier,Counter mode,Cryptographically secure pseudorandom number generator,Fortuna (luck),Niels Ferguson,Secure Hash Algorithm,Serpent (cipher),Twofish" 
+name=keywords><LINK title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;action=edit" 
+type=application/x-wiki rel=alternate><LINK href="/favicon.ico" 
+rel="shortcut icon"><LINK href="http://en.wikipedia.org/apple-touch-icon.png" 
+rel=apple-touch-icon><LINK title="Wikipedia (en)" href="/w/opensearch_desc.php" 
+type=application/opensearchdescription+xml rel=search><LINK 
+href="http://www.gnu.org/copyleft/fdl.html" rel=copyright><LINK 
+title="Wikipedia RSS Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss" 
+type=application/rss+xml rel=alternate><LINK title="Wikipedia Atom Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom" 
+type=application/atom+xml rel=alternate>
+<STYLE type=text/css media="screen, projection">@import url( /skins-1.5/common/shared.css?160 );
+@import url( /skins-1.5/monobook/main.css?160 );
+</STYLE>
+<LINK media=print 
+href="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/commonPrint.css" 
+type=text/css rel=stylesheet><!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?160";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?160";</style><![endif]--><!--[if IE 6]>
+<STYLE type=text/css>@import url( /skins-1.5/monobook/IE60Fixes.css?160 );
+</STYLE>
+<![endif]--><!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?160";</style><![endif]--><!--[if lt IE 7]>
+<SCRIPT src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/IEFixes.js" 
+type=text/javascript></SCRIPT>
+
+<META http-equiv=imagetoolbar content=no><![endif]-->
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgScript = "/w/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Fortuna_(PRNG)";
+var wgTitle = "Fortuna (PRNG)";
+var wgAction = "view";
+var wgArticleId = "1627154";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "207502989";
+var wgVersion = "1.13alpha";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgMWSuggestTemplate = "http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}";
+var wgDBname = "enwiki";
+var wgSearchNamespaces = [0];
+var wgMWSuggestMessages = ["with suggestions", "no suggestions"];
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/wikibits.js" 
+type=text/javascript><!-- wikibits js --></SCRIPT>
+<!-- Head Scripts -->
+<SCRIPT src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/ajax.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/mwsuggest.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/index.php" 
+type=text/javascript><!-- site js --></SCRIPT>
+
+<STYLE type=text/css>@import url( /w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=-&action=raw&gen=css&maxage=2678400 );
+</STYLE>
+</HEAD>
+<BODY class="mediawiki ns-0 ltr page-Fortuna_PRNG">
+<DIV id=globalWrapper>
+<DIV id=column-content>
+<DIV id=content><A id=top name=top></A>
+<DIV id=siteNotice>
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+document.writeln("\x3cp\x3e\x3c/p\x3e\n");
+-->
+</SCRIPT>
+</DIV>
+<H1 class=firstHeading>Fortuna (PRNG)</H1>
+<DIV id=bodyContent>
+<H3 id=siteSub>From Wikipedia, the free encyclopedia</H3>
+<DIV id=contentSub></DIV>
+<DIV id=jump-to-nav>Jump to: <A 
+href="http://en.wikipedia.org/wiki/Fortuna_(PRNG)#column-one">navigation</A>, <A 
+href="http://en.wikipedia.org/wiki/Fortuna_(PRNG)#searchInput">search</A></DIV><!-- start content -->
+<P><B>Fortuna</B> is a <A 
+title="Cryptographically secure pseudorandom number generator" 
+href="http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator">cryptographically 
+secure pseudorandom number generator</A> (PRNG) devised by <A 
+title="Bruce Schneier" href="http://en.wikipedia.org/wiki/Bruce_Schneier">Bruce 
+Schneier</A> and <A title="Niels Ferguson" 
+href="http://en.wikipedia.org/wiki/Niels_Ferguson">Niels Ferguson</A>. It is 
+named after <A class=mw-redirect title="Fortuna (luck)" 
+href="http://en.wikipedia.org/wiki/Fortuna_(luck)">Fortuna</A>, the Roman 
+goddess of chance.</P>
+<P>More precisely, Fortuna is a <I>family</I> of secure PRNGs; its design leaves 
+some choices open to implementors. It is composed of the following pieces:</P>
+<UL>
+  <LI>The generator itself, which once seeded will produce an indefinite 
+  quantity of pseudo-random data. 
+  <LI>The entropy accumulator, which collects genuinely random data from various 
+  sources and uses it to reseed the generator when enough new randomness has 
+  arrived. 
+  <LI>The seed file, which stores enough state to enable the computer to start 
+  generating random numbers as soon as it has booted. </LI></UL>
+<P>The generator is based on any good <A title="Block cipher" 
+href="http://en.wikipedia.org/wiki/Block_cipher">block cipher</A>. <I>Practical 
+Cryptography</I> suggests <A title="Advanced Encryption Standard" 
+href="http://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</A>, <A 
+title="Serpent (cipher)" 
+href="http://en.wikipedia.org/wiki/Serpent_(cipher)">Serpent</A> or <A 
+title=Twofish href="http://en.wikipedia.org/wiki/Twofish">Twofish</A>. The basic 
+idea is to run the cipher in <A class=mw-redirect title="Counter mode" 
+href="http://en.wikipedia.org/wiki/Counter_mode">counter mode</A>, encrypting 
+successive values of an incrementing counter. On its own, this would produce 
+statistically identifiable deviations from randomness; for instance, generating 
+2<SUP>65</SUP> genuinely random 128-bit blocks would produce on average about 
+one pair of identical blocks, but there are no repeated blocks at all among the 
+first 2<SUP>128</SUP> produced by a 128-bit cipher in counter mode. Therefore, 
+the key is changed periodically: no more than 1MB of data is generated without a 
+key change. The key is also changed after every data request (however small), so 
+that a key compromise doesn't endanger old RNG outputs.</P>
+<P>The entropy accumulator is designed to be resistant against "injection" 
+attacks, without needing sophisticated (and inevitably unreliable) estimators of 
+entropy. There are several "pools" of entropy; each entropy source distributes 
+its alleged entropy evenly over the pools; and (here is the key idea) on the 
+<I>n</I>th reseeding of the generator, pool <I>k</I> is used only if 
+2<SUP><I>k</I></SUP> divides <I>n</I>. Thus, the <I>k</I>th pool is used only 
+1/2<SUP><I>k</I></SUP> of the time. Higher-numbered pools, in other words, (1) 
+contribute to reseedings less frequently but (2) collect a larger amount of 
+entropy between reseedings. Reseeding is performed by hashing the specified 
+entropy pools into the block cipher's key using two iterations of <A 
+class=mw-redirect title="Secure Hash Algorithm" 
+href="http://en.wikipedia.org/wiki/Secure_Hash_Algorithm">SHA-256</A>.</P>
+<P>Unless an attacker is able to control <I>all</I> the sources of alleged 
+entropy flowing into the system (in which case no algorithm can save it from 
+compromise), there will be some <I>k</I> for which the <I>k</I>th pool collects 
+enough entropy between reseedings that a reseeding with that pool ensures 
+security. And that pool will be used at an interval proportional to the amount 
+of entropy in question. Therefore, the system will always recover from an 
+injection attack, and the time it takes to do so is at most a constant factor 
+greater than the theoretical time it could take if we were able to identify 
+which sources of entropy were corrupt and which not.</P>
+<P>This conclusion depends on there being enough pools. Fortuna uses 32 pools, 
+and restricts reseeding to happen at most 10 times per second. Running out of 
+pools would then take about 13 years, which Ferguson and Schneier deem long 
+enough for practical purposes. More paranoid implementors, or ones requiring the 
+generation of random data at a colossal rate and correspondingly frequent 
+reseeding, could use a larger number of pools.</P>
+<P>Fortuna differs from the earlier <A title="Yarrow algorithm" 
+href="http://en.wikipedia.org/wiki/Yarrow_algorithm">Yarrow</A> algorithm family 
+of Schneier, Kelsey and Ferguson mostly in its handling of the entropy 
+accumulator. Yarrow required each source of entropy to be accompanied by a 
+mechanism for estimating the actual entropy supplied, and used only two pools; 
+and its suggested embodiment (called <I>Yarrow-160</I>) used <A 
+class=mw-redirect title="Secure Hash Algorithm" 
+href="http://en.wikipedia.org/wiki/Secure_Hash_Algorithm">SHA-1</A> rather than 
+iterated <A class=mw-redirect title="Secure Hash Algorithm" 
+href="http://en.wikipedia.org/wiki/Secure_Hash_Algorithm">SHA-256</A>.</P>
+<P><A id=References name=References></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: References" 
+href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;action=edit&amp;section=1">edit</A>]</SPAN> 
+<SPAN class=mw-headline>References</SPAN></H2>
+<UL>
+  <LI>Niels Ferguson and Bruce Schneier, <I>Practical Cryptography</I>, 
+  published by Wiley in 2003. <A class=internal 
+  href="http://en.wikipedia.org/wiki/Special:BookSources/0471223573">ISBN 
+  0-471-22357-3</A>. </LI></UL>
+<P><A id=External_links name=External_links></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: External links" 
+href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;action=edit&amp;section=2">edit</A>]</SPAN> 
+<SPAN class=mw-headline>External links</SPAN></H2>
+<P><A id=Implementations name=Implementations></A></P>
+<H3><SPAN class=editsection>[<A title="Edit section: Implementations" 
+href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;action=edit&amp;section=3">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Implementations</SPAN></H3>
+<UL>
+  <LI>The <A class="external text" 
+  title=http://sourceforge.net/projects/clipperzlib 
+  href="http://sourceforge.net/projects/clipperzlib" rel=nofollow>Javascript 
+  Crypto Library</A> includes a Javascript implementation of Fortuna PRNG, open 
+  source, AGPL licensed. 
+  <LI><A class="external free" title=http://jlcooke.ca/random 
+  href="http://jlcooke.ca/random" rel=nofollow>http://jlcooke.ca/random</A> 
+  <I>Homepage for a patch adding an implementation of Fortuna to the Linux 
+  kernel; seems to still do some Yarrow-style entropy estimation</I> 
+  <LI><A class="external free" 
+  title=http://www.citadelsoftware.ca/fortuna/fortuna.htm 
+  href="http://www.citadelsoftware.ca/fortuna/fortuna.htm" 
+  rel=nofollow>http://www.citadelsoftware.ca/fortuna/fortuna.htm</A> <I>Fortuna 
+  implementation in C++ (with source code)</I> </LI></UL><!-- 
+NewPP limit report
+Preprocessor node count: 12/1000000
+Post-expand include size: 0/2048000 bytes
+Template argument size: 0/2048000 bytes
+Expensive parser function count: 0/500
+--><!-- Saved in parser cache with key enwiki:pcache:idhash:1627154-0!1!0!default!!en!2 and timestamp 20080623173059 -->
+<DIV class=printfooter>Retrieved from "<A 
+href="http://en.wikipedia.org/wiki/Fortuna_(PRNG)">http://en.wikipedia.org/wiki/Fortuna_(PRNG)</A>"</DIV>
+<DIV class=catlinks id=catlinks>
+<DIV id=mw-normal-catlinks><A title=Special:Categories 
+href="http://en.wikipedia.org/wiki/Special:Categories">Categories</A>: <SPAN 
+dir=ltr><A title="Category:Pseudorandom number generators" 
+href="http://en.wikipedia.org/wiki/Category:Pseudorandom_number_generators">Pseudorandom 
+number generators</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Cryptographically secure pseudorandom number generators" 
+href="http://en.wikipedia.org/wiki/Category:Cryptographically_secure_pseudorandom_number_generators">Cryptographically 
+secure pseudorandom number generators</A></SPAN></DIV></DIV><!-- end content -->
+<DIV class=visualClear></DIV></DIV></DIV></DIV>
+<DIV id=column-one>
+<DIV class=portlet id=p-cactions>
+<H5>Views</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=selected id=ca-nstab-main><A title="View the content page [c]" 
+  accessKey=c href="http://en.wikipedia.org/wiki/Fortuna_(PRNG)">Article</A> 
+  <LI id=ca-talk><A title="Discussion about the content page [t]" accessKey=t 
+  href="http://en.wikipedia.org/wiki/Talk:Fortuna_(PRNG)">Discussion</A> 
+  <LI id=ca-edit><A 
+  title="You can edit this page. Please use the preview button before saving. [e]" 
+  accessKey=e 
+  href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;action=edit">Edit 
+  this page</A> 
+  <LI id=ca-history><A title="Past versions of this page [h]" accessKey=h 
+  href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;action=history">History</A> 
+  </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-personal>
+<H5>Personal tools</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=pt-login><A 
+  title="You are encouraged to log in; however, it is not mandatory. [o]" 
+  accessKey=o 
+  href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Fortuna_(PRNG)">Log 
+  in / create account</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-logo><A title="Visit the main page [z]" 
+style="BACKGROUND-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png)" 
+accessKey=z href="http://en.wikipedia.org/wiki/Main_Page"></A></DIV>
+<SCRIPT type=text/javascript> if (window.isMSIE55) fixalpha(); </SCRIPT>
+
+<DIV class="generated-sidebar portlet" id=p-navigation>
+<H5>Navigation</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-mainpage><A title="Visit the main page [z]" accessKey=z 
+  href="http://en.wikipedia.org/wiki/Main_Page">Main Page</A> 
+  <LI id=n-Contents><A title="Guides to browsing Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Portal:Contents">Contents</A> 
+  <LI id=n-featuredcontent><A 
+  href="http://en.wikipedia.org/wiki/Portal:Featured_content">Featured 
+  content</A> 
+  <LI id=n-currentevents><A 
+  title="Find background information on current events" 
+  href="http://en.wikipedia.org/wiki/Portal:Current_events">Current events</A> 
+  <LI id=n-randompage><A title="Load a random article [x]" accessKey=x 
+  href="http://en.wikipedia.org/wiki/Special:Random">Random article</A> 
+</LI></UL></DIV></DIV>
+<DIV class="generated-sidebar portlet" id=p-interaction>
+<H5>Interaction</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-aboutsite><A 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=n-portal><A 
+  title="About the project, what you can do, where to find things" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Community_Portal">Community 
+  portal</A> 
+  <LI id=n-recentchanges><A title="The list of recent changes in the wiki [r]" 
+  accessKey=r href="http://en.wikipedia.org/wiki/Special:RecentChanges">Recent 
+  changes</A> 
+  <LI id=n-contact><A title="How to contact Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</A> 
+
+  <LI id=n-sitesupport><A title="Support us" 
+  href="http://wikimediafoundation.org/wiki/Donate">Donate to Wikipedia</A> 
+  <LI id=n-help><A title="Guidance on how to use and edit Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Help:Contents">Help</A> 
+</LI></UL></DIV></DIV>
+<DIV class=portlet id=p-search>
+<H5><LABEL for=searchInput>Search</LABEL></H5>
+<DIV class=pBody id=searchBody>
+<FORM id=searchform action=/wiki/Special:Search>
+<DIV><INPUT id=searchInput title="Search Wikipedia [f]" accessKey=f name=search> 
+<INPUT class=searchButton id=searchGoButton title="Go to a page with this exact name if one exists" type=submit value=Go name=go>&nbsp; 
+<INPUT class=searchButton id=mw-searchButton title="Search the wiki for this text" type=submit value=Search name=fulltext> 
+</DIV></FORM></DIV></DIV>
+<DIV class=portlet id=p-tb>
+<H5>Toolbox</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=t-whatlinkshere><A 
+  title="List of all English Wikipedia pages that link here [j]" accessKey=j 
+  href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Fortuna_(PRNG)">What 
+  links here</A> 
+  <LI id=t-recentchangeslinked><A 
+  title="Recent changes in pages linked from this page [k]" accessKey=k 
+  href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Fortuna_(PRNG)">Related 
+  changes</A> 
+  <LI id=t-upload><A title="Upload files [u]" accessKey=u 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Upload">Upload file</A> 
+  <LI id=t-specialpages><A title="List of all special pages [q]" accessKey=q 
+  href="http://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</A> 
+  <LI id=t-print><A title="Printable version of this page [p]" accessKey=p 
+  href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;printable=yes">Printable 
+  version</A> 
+  <LI id=t-permalink><A title="Permanent link to this version of the page" 
+  href="http://en.wikipedia.org/w/index.php?title=Fortuna_%28PRNG%29&amp;oldid=207502989">Permanent 
+  link</A>
+  <LI id=t-cite><A 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Fortuna_%28PRNG%29&amp;id=207502989">Cite 
+  this page</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-lang>
+<H5>Languages</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=interwiki-fr><A 
+  href="http://fr.wikipedia.org/wiki/Fortuna_(cryptographie)">Français</A> 
+  <LI class=interwiki-it><A 
+  href="http://it.wikipedia.org/wiki/Fortuna_(CSPRNG)">Italiano</A> 
+</LI></UL></DIV></DIV></DIV><!-- end of the left (by default at least) column -->
+<DIV class=visualClear></DIV>
+<DIV id=footer>
+<DIV id=f-poweredbyico><A href="http://www.mediawiki.org/"><IMG 
+alt="Powered by MediaWiki" 
+src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png"></A></DIV>
+<DIV id=f-copyrightico><A href="http://wikimediafoundation.org/"><IMG 
+alt="Wikimedia Foundation" 
+src="Fortuna (PRNG) - Wikipedia, the free encyclopedia_files/wikimedia-button.png" 
+border=0></A></DIV>
+<UL id=f-list>
+  <LI id=lastmod>This page was last modified on 23 April 2008, at 01:28. 
+  <LI id=copyright>All text is available under the terms of the <A 
+  class=internal title="Wikipedia:Text of the GNU Free Documentation License" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License">GNU 
+  Free Documentation License</A>. (See <B><A class=internal 
+  title=Wikipedia:Copyrights 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights">Copyrights</A></B> 
+  for details.) <BR>Wikipedia® is a registered trademark of the <A 
+  href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc</A>., a 
+  U.S. registered <A class=internal title=501(c)(3) 
+  href="http://en.wikipedia.org/wiki/501(c)#501.28c.29.283.29">501(c)(3)</A> <A 
+  href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</A> 
+  <A class=internal title="Non-profit organization" 
+  href="http://en.wikipedia.org/wiki/Non-profit_organization">nonprofit</A> <A 
+  title="Charitable organization" 
+  href="http://en.wikipedia.org/wiki/Charitable_organization">charity</A>.<BR>
+  <LI id=privacy><A title="wikimedia:Privacy policy" 
+  href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy policy</A> 
+  <LI id=about><A title=Wikipedia:About 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=disclaimer><A title="Wikipedia:General disclaimer" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</A> 
+  </LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>if (window.runOnloadHook) runOnloadHook();</SCRIPT>
+<!-- Served by srv157 in 0.047 secs. --></BODY></HTML>

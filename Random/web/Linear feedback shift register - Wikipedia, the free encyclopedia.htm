@@ -1,0 +1,873 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0059)http://en.wikipedia.org/wiki/Linear_feedback_shift_register -->
+<HTML lang=en dir=ltr xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Linear feedback shift register - Wikipedia, the free encyclopedia</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.5512" name=GENERATOR>
+<META 
+content="Linear feedback shift register,A5/1,A5/2,ATSC Standards,Alternating step generator,Berlekamp-Massey algorithm,Binary numeral system,Bit,C++,CDMA,C (programming language)" 
+name=keywords><LINK title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit" 
+type=application/x-wiki rel=alternate><LINK href="/favicon.ico" 
+rel="shortcut icon"><LINK href="http://en.wikipedia.org/apple-touch-icon.png" 
+rel=apple-touch-icon><LINK title="Wikipedia (en)" href="/w/opensearch_desc.php" 
+type=application/opensearchdescription+xml rel=search><LINK 
+href="http://www.gnu.org/copyleft/fdl.html" rel=copyright><LINK 
+title="Wikipedia RSS Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss" 
+type=application/rss+xml rel=alternate><LINK title="Wikipedia Atom Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom" 
+type=application/atom+xml rel=alternate>
+<STYLE type=text/css media="screen, projection">@import url( /skins-1.5/common/shared.css?162 );
+@import url( /skins-1.5/monobook/main.css?162 );
+</STYLE>
+<LINK media=print 
+href="Linear feedback shift register - Wikipedia, the free encyclopedia_files/commonPrint.css" 
+type=text/css rel=stylesheet><!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?162";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?162";</style><![endif]--><!--[if IE 6]>
+<STYLE type=text/css>@import url( /skins-1.5/monobook/IE60Fixes.css?162 );
+</STYLE>
+<![endif]--><!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?162";</style><![endif]--><!--[if lt IE 7]>
+<SCRIPT 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/IEFixes.js" 
+type=text/javascript></SCRIPT>
+
+<META http-equiv=imagetoolbar content=no><![endif]-->
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgScript = "/w/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Linear_feedback_shift_register";
+var wgTitle = "Linear feedback shift register";
+var wgAction = "view";
+var wgArticleId = "58992";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "218127306";
+var wgVersion = "1.13alpha";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgMWSuggestTemplate = "http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}";
+var wgDBname = "enwiki";
+var wgSearchNamespaces = [0];
+var wgMWSuggestMessages = ["with suggestions", "no suggestions"];
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/wikibits.js" 
+type=text/javascript><!-- wikibits js --></SCRIPT>
+<!-- Head Scripts -->
+<SCRIPT 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/ajax.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/mwsuggest.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/index.php" 
+type=text/javascript><!-- site js --></SCRIPT>
+
+<STYLE type=text/css>@import url( /w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400 );
+@import url( /w/index.php?title=-&action=raw&gen=css&maxage=2678400 );
+</STYLE>
+</HEAD>
+<BODY class="mediawiki ns-0 ltr page-Linear_feedback_shift_register">
+<DIV id=globalWrapper>
+<DIV id=column-content>
+<DIV id=content><A id=top name=top></A>
+<DIV id=siteNotice>
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+document.writeln("\x3cp\x3e\x3c/p\x3e\n");
+-->
+</SCRIPT>
+</DIV>
+<H1 class=firstHeading>Linear feedback shift register</H1>
+<DIV id=bodyContent>
+<H3 id=siteSub>From Wikipedia, the free encyclopedia</H3>
+<DIV id=contentSub></DIV>
+<DIV id=jump-to-nav>Jump to: <A 
+href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#column-one">navigation</A>, 
+<A 
+href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#searchInput">search</A></DIV><!-- start content -->
+<DIV class="thumb tright">
+<DIV class=thumbinner style="WIDTH: 502px"><A class=image 
+title='A 4-bit Fibonacci LFSR with its state diagram. The xor gate provides feedback to the register that shifts bits from left to right. The maximal sequence consists of every possible state except the "0000" state.' 
+href="http://en.wikipedia.org/wiki/Image:LFSR-F4.GIF"><IMG class=thumbimage 
+height=300 
+alt='A 4-bit Fibonacci LFSR with its state diagram. The xor gate provides feedback to the register that shifts bits from left to right. The maximal sequence consists of every possible state except the "0000" state.' 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/LFSR-F4.gif" 
+width=500 border=0></A> 
+<DIV class=thumbcaption>
+<DIV class=magnify><A class=internal title=Enlarge 
+href="http://en.wikipedia.org/wiki/Image:LFSR-F4.GIF"><IMG height=11 alt="" 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/magnify-clip.png" 
+width=15></A></DIV>A 4-bit Fibonacci LFSR with its state diagram. The <A 
+class=mw-redirect title="Xor gate" 
+href="http://en.wikipedia.org/wiki/Xor_gate">xor gate</A> provides feedback to 
+the register that shifts bits from left to right. The maximal sequence consists 
+of every possible state except the "0000" state.</DIV></DIV></DIV>
+<P>A <B>linear feedback shift register</B> (LFSR) is a <A title="Shift register" 
+href="http://en.wikipedia.org/wiki/Shift_register">shift register</A> whose 
+input bit is a <A class=mw-redirect title="Linear transformation" 
+href="http://en.wikipedia.org/wiki/Linear_transformation">linear</A> function of 
+its previous state.</P>
+<P>The only linear functions of single bits are xor and inverse-xor; thus it is 
+a shift register whose input bit is driven by the <A class=mw-redirect 
+title=Exclusive-or 
+href="http://en.wikipedia.org/wiki/Exclusive-or">exclusive-or</A> (xor) of some 
+bits of the overall shift register value.</P>
+<P>The initial value of the LFSR is called the seed, and because the operation 
+of the register is deterministic, the sequence of values produced by the 
+register is completely determined by its current (or previous) state. Likewise, 
+because the register has a finite number of possible states, it must eventually 
+enter a repeating cycle. However, an LFSR with a well-chosen feedback function 
+can produce a sequence of bits which appears random and which has a very long 
+cycle.</P>
+<P>Applications of LFSRs include generating <A title=Pseudorandomness 
+href="http://en.wikipedia.org/wiki/Pseudorandomness">pseudo-random numbers</A>, 
+<A title="Pseudorandom noise" 
+href="http://en.wikipedia.org/wiki/Pseudorandom_noise">pseudo-noise 
+sequences</A>, fast digital counters, and <A class=new 
+title="Whitening sequences (page does not exist)" 
+href="http://en.wikipedia.org/w/index.php?title=Whitening_sequences&amp;action=edit&amp;redlink=1">whitening 
+sequences</A>. Both hardware and software implementations of LFSRs are 
+common.</P>
+<TABLE class=toc id=toc summary=Contents>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV id=toctitle>
+      <H2>Contents</H2></DIV>
+      <UL>
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Fibonacci_LFSRs"><SPAN 
+        class=tocnumber>1</SPAN> <SPAN class=toctext>Fibonacci LFSRs</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Galois_LFSRs"><SPAN 
+        class=tocnumber>2</SPAN> <SPAN class=toctext>Galois LFSRs</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Some_Polynomials_for_Maximal_LFSRs"><SPAN 
+        class=tocnumber>3</SPAN> <SPAN class=toctext>Some Polynomials for 
+        Maximal LFSRs</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Output-stream_properties"><SPAN 
+        class=tocnumber>4</SPAN> <SPAN class=toctext>Output-stream 
+        properties</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Applications"><SPAN 
+        class=tocnumber>5</SPAN> <SPAN class=toctext>Applications</SPAN></A> 
+        <UL>
+          <LI class=toclevel-2><A 
+          href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Uses_as_Counters"><SPAN 
+          class=tocnumber>5.1</SPAN> <SPAN class=toctext>Uses as 
+          Counters</SPAN></A> 
+          <LI class=toclevel-2><A 
+          href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Uses_in_cryptography"><SPAN 
+          class=tocnumber>5.2</SPAN> <SPAN class=toctext>Uses in 
+          cryptography</SPAN></A> 
+          <LI class=toclevel-2><A 
+          href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#Uses_in_digital_broadcasting_and_communications"><SPAN 
+          class=tocnumber>5.3</SPAN> <SPAN class=toctext>Uses in digital 
+          broadcasting and communications</SPAN></A> </LI></UL>
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#See_also"><SPAN 
+        class=tocnumber>6</SPAN> <SPAN class=toctext>See also</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register#External_links"><SPAN 
+        class=tocnumber>7</SPAN> <SPAN class=toctext>External links</SPAN></A> 
+        </LI></UL></TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</SCRIPT>
+
+<P><A id=Fibonacci_LFSRs name=Fibonacci_LFSRs></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: Fibonacci LFSRs" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=1">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Fibonacci LFSRs</SPAN></H2>
+<DIV class="thumb tright">
+<DIV class=thumbinner style="WIDTH: 353px"><A class=image 
+title="A 16-bit Fibonacci LFSR. The feedback tap numbers in white correspond to a primitive polynomial in the table so the register cycles through the maximal number of 65535 states excluding the all-zeroes state. The state ACE1 hex shown will be followed by 5670 hex." 
+href="http://en.wikipedia.org/wiki/Image:LFSR-F16.gif"><IMG class=thumbimage 
+height=121 
+alt="A 16-bit Fibonacci LFSR. The feedback tap numbers in white correspond to a primitive polynomial in the table so the register cycles through the maximal number of 65535 states excluding the all-zeroes state. The state ACE1 hex shown will be followed by 5670 hex." 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/LFSR-F16.gif" 
+width=351 border=0></A> 
+<DIV class=thumbcaption>
+<DIV class=magnify><A class=internal title=Enlarge 
+href="http://en.wikipedia.org/wiki/Image:LFSR-F16.gif"><IMG height=11 alt="" 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/magnify-clip.png" 
+width=15></A></DIV>A 16-bit Fibonacci LFSR. The feedback tap numbers in white 
+correspond to a primitive polynomial in the table so the register cycles through 
+the maximal number of 65535 states excluding the all-zeroes state. The state 
+ACE1 <A title=Hexadecimal 
+href="http://en.wikipedia.org/wiki/Hexadecimal">hex</A> shown will be followed 
+by 5670 hex.</DIV></DIV></DIV>
+<P>The list of the bits' positions that affect the next state is called the tap 
+sequence. In the diagram the sequence is [16,14,13,11,0]. The taps are XOR'd 
+sequentially with the output and then fed back into the leftmost bit.</P>
+<UL>
+  <LI>The outputs that influence the input are called <I>taps</I> (white in the 
+  diagram). 
+  <LI>A maximal LFSR produces an <A class=mw-redirect title=N-sequence 
+  href="http://en.wikipedia.org/wiki/N-sequence">n-sequence</A> (i.e. cycles 
+  through all possible <SPAN class=texhtml>2<SUP><I>n</I></SUP> − 1</SPAN> 
+  states within the shift register except the state where all bits are zero), 
+  unless it contains all zeros, in which case it will never change. </LI></UL>
+<P>The sequence of numbers generated by an LFSR can be considered a <A 
+title="Binary numeral system" 
+href="http://en.wikipedia.org/wiki/Binary_numeral_system">binary numeral 
+system</A> just as valid as <A title="Gray code" 
+href="http://en.wikipedia.org/wiki/Gray_code">Gray code</A> or the natural 
+binary code.</P>
+<P>The tap sequence of an LFSR can be represented as a <A title=Polynomial 
+href="http://en.wikipedia.org/wiki/Polynomial">polynomial</A> <A 
+title="Modular arithmetic" 
+href="http://en.wikipedia.org/wiki/Modular_arithmetic">mod</A> 2. This means 
+that the coefficients of the polynomial must be 1's or 0's. This is called the 
+feedback polynomial or characteristic polynomial. For example, if the taps are 
+at the 16th, 14th, 13th and 11th bits (as shown), the feedback polynomial 
+is:</P>
+<DL>
+  <DD>
+  <DL>
+    <DD><IMG class=tex alt="x^{16} + x^{14} + x^{13} + x^{11} + 1\," 
+    src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/9cb2e835e3100ca5461032d6b23ce5bf.png"> 
+    </DD></DL></DD></DL>
+<P>The 'one' in the polynomial does not correspond to a tap - it corresponds to 
+the input to the first bit (i.e. <I>x<SUP>0</SUP></I>, which is equivalent to 
+1). The powers of the terms represent the tapped bits, counting from the left. 
+The first and last bits are always connected as an input and tap 
+respectively.</P>
+<P>Tables of <A title="Primitive polynomial" 
+href="http://en.wikipedia.org/wiki/Primitive_polynomial">primitive 
+polynomials</A> from which maximal LFSRs can be constructed are given below and 
+in the references.</P>
+<UL>
+  <LI>The LFSR will only be maximal if the number of taps is <A 
+  class=mw-redirect title="Even and odd numbers" 
+  href="http://en.wikipedia.org/wiki/Even_and_odd_numbers">even</A>; just 2 or 4 
+  taps can suffice even for extremely long sequences. 
+  <LI>The set of taps must be <A class=mw-redirect title="Relatively prime" 
+  href="http://en.wikipedia.org/wiki/Relatively_prime">relatively prime</A>, and 
+  share no common divisor to all taps. 
+  <LI>There can be more than one maximal tap sequence for a given LFSR length 
+  <LI>Once one maximal tap sequence has been found, another automatically 
+  follows. If the tap sequence, in an <I>n</I>-bit LFSR, is [n,A,B,C,0], where 
+  the 0 corresponds to the <SPAN class=texhtml><I>x</I><SUP>0</SUP> = 1</SPAN> 
+  term, then the corresponding 'mirror' sequence is [n,n-C,n-B,n-A,0]. So the 
+  tap sequence [32,3,2,0] has as its counterpart [32,30,29,0]. Both give a 
+  maximal sequence. </LI></UL>
+<P><A id=Galois_LFSRs name=Galois_LFSRs></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: Galois LFSRs" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=2">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Galois LFSRs</SPAN></H2>
+<P>Named after the French mathematician <A title="Évariste Galois" 
+href="http://en.wikipedia.org/wiki/Ãvariste_Galois">Évariste Galois</A>, a 
+<I>Galois</I> LFSR, or an LFSR in Galois configuration, is an alternate 
+structure that can generate the same output sequences as a conventional LFSR. In 
+the Galois configuration, when the system is clocked, bits that are not taps are 
+shifted as normal to the next flip-flop. The taps, on the other hand, are XOR'd 
+with the new output, which also becomes the new input. These won't be shifted in 
+until the next clock cycle.</P>
+<DIV class="thumb tright">
+<DIV class=thumbinner style="WIDTH: 395px"><A class=image 
+title="A 16-bit Galois LFSR. The register numbers in white correspond to the same primitive polynomial as the Fibonacci example but are counted in reverse to the shifting direction. This register also cycles through the maximal number of 65535 states excluding the all-zeroes state. The state ACE1 hex shown will be followed by E270 hex." 
+href="http://en.wikipedia.org/wiki/Image:LFSR-G16.gif"><IMG class=thumbimage 
+height=120 
+alt="A 16-bit Galois LFSR. The register numbers in white correspond to the same primitive polynomial as the Fibonacci example but are counted in reverse to the shifting direction. This register also cycles through the maximal number of 65535 states excluding the all-zeroes state. The state ACE1 hex shown will be followed by E270 hex." 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/LFSR-G16.gif" 
+width=393 border=0></A> 
+<DIV class=thumbcaption>
+<DIV class=magnify><A class=internal title=Enlarge 
+href="http://en.wikipedia.org/wiki/Image:LFSR-G16.gif"><IMG height=11 alt="" 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/magnify-clip.png" 
+width=15></A></DIV>A 16-bit Galois LFSR. The register numbers in white 
+correspond to the same primitive polynomial as the Fibonacci example but are 
+counted in reverse to the shifting direction. This register also cycles through 
+the maximal number of 65535 states excluding the all-zeroes state. The state 
+ACE1 hex shown will be followed by E270 hex.</DIV></DIV></DIV>
+<P>To generate the same output sequence, the order of the taps is the 
+<I>counterpart</I> (see above) of the order for the conventional LFSR, otherwise 
+the sequence will be in reverse. Note that the internal state of the LFSR is not 
+necessarily the same. The Galois register shown has the same output as the 
+Fibonnacci register in the first section.</P>
+<UL>
+  <LI>Galois LFSRs do not concatenate every tap to produce the new input (the 
+  XOR'ing is done within the LFSR and no XOR gates are run in serial, therefore 
+  the propagation times are reduced to that of one XOR rather than a whole 
+  chain), thus it is possible for each tap to be computed in parallel, 
+  increasing the speed of execution. 
+  <LI>In a software implementation of an LFSR, the Galois form is more efficient 
+  as the XOR operations can be implemented a word at a time: only the output bit 
+  must be examined individually. </LI></UL>
+<P>Below is a code example of a 32-bit maximal period Galois LFSR that is valid 
+in <A title="C (programming language)" 
+href="http://en.wikipedia.org/wiki/C_(programming_language)">C</A> and <A 
+title=C++ href="http://en.wikipedia.org/wiki/C++">C++</A>, (assuming that 
+unsigned int has 32 bit precision):</P><PRE><CODE> unsigned int lfsr = 1;
+ unsigned int period = 0; 
+ do {
+   lfsr = (lfsr &gt;&gt; 1) ^ (-(lfsr &amp; 1u) &amp; 0xd0000001u); /* taps 32 31 29 1 */
+   ++period;
+ } while(lfsr != 1u);
+</CODE>
+</PRE>
+<P>And here is the code for the 16 bit example in the figure.</P><PRE><CODE>unsigned short lfsr = 0xACE1u;
+unsigned int period = 0; 
+do {
+  lfsr = (lfsr &gt;&gt; 1) ^ (-(short)(lfsr &amp; 1u) &amp; 0xB400u); 
+  ++period;
+} while(lfsr != 0xACE1u);
+</CODE>
+</PRE>
+<P><CODE><BR></CODE></P>
+<P><A id=Some_Polynomials_for_Maximal_LFSRs 
+name=Some_Polynomials_for_Maximal_LFSRs></A></P>
+<H2><SPAN class=editsection>[<A 
+title="Edit section: Some Polynomials for Maximal LFSRs" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=3">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Some Polynomials for Maximal LFSRs</SPAN></H2>
+<TABLE class=wikitable>
+  <TBODY>
+  <TR>
+    <TH>Bits</TH>
+    <TH>Feedback polynomial</TH>
+    <TH>Period</TH></TR>
+  <TR>
+    <TH><I>n</I></TH>
+    <TH></TH>
+    <TH><SPAN class=texhtml>2<SUP><I>n</I></SUP> − 1</SPAN></TH></TR>
+  <TR>
+    <TH>4</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>4</SUP> + <I>x</I><SUP>3</SUP> + 
+      1</SPAN></TH>
+    <TH>15</TH></TR>
+  <TR>
+    <TH>5</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>5</SUP> + <I>x</I><SUP>3</SUP> + 
+      1</SPAN></TH>
+    <TH>31</TH></TR>
+  <TR>
+    <TH>6</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>6</SUP> + <I>x</I><SUP>5</SUP> + 
+      1</SPAN></TH>
+    <TH>63</TH></TR>
+  <TR>
+    <TH>7</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>7</SUP> + <I>x</I><SUP>6</SUP> + 
+      1</SPAN></TH>
+    <TH>127</TH></TR>
+  <TR>
+    <TH>8</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>8</SUP> + <I>x</I><SUP>6</SUP> + 
+      <I>x</I><SUP>5</SUP> + <I>x</I><SUP>4</SUP> + 1</SPAN></TH>
+    <TH>255</TH></TR>
+  <TR>
+    <TH>9</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>9</SUP> + <I>x</I><SUP>5</SUP> + 
+      1</SPAN></TH>
+    <TH>511</TH></TR>
+  <TR>
+    <TH>10</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>10</SUP> + <I>x</I><SUP>7</SUP> + 
+      1</SPAN></TH>
+    <TH>1023</TH></TR>
+  <TR>
+    <TH>11</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>11</SUP> + <I>x</I><SUP>9</SUP> + 
+      1</SPAN></TH>
+    <TH>2047</TH></TR>
+  <TR>
+    <TH>12</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>12</SUP> + <I>x</I><SUP>11</SUP> + 
+      <I>x</I><SUP>10</SUP> + <I>x</I><SUP>4</SUP> + 1</SPAN></TH>
+    <TH>4095</TH></TR>
+  <TR>
+    <TH>13</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>13</SUP> + <I>x</I><SUP>12</SUP> + 
+      <I>x</I><SUP>11</SUP> + <I>x</I><SUP>8</SUP> + 1</SPAN></TH>
+    <TH>8191</TH></TR>
+  <TR>
+    <TH>14</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>14</SUP> + <I>x</I><SUP>13</SUP> + 
+      <I>x</I><SUP>12</SUP> + <I>x</I><SUP>2</SUP> + 1</SPAN></TH>
+    <TH>16383</TH></TR>
+  <TR>
+    <TH>15</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>15</SUP> + <I>x</I><SUP>14</SUP> + 
+      1</SPAN></TH>
+    <TH>32767</TH></TR>
+  <TR>
+    <TH>16</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>16</SUP> + <I>x</I><SUP>14</SUP> + 
+      <I>x</I><SUP>13</SUP> + <I>x</I><SUP>11</SUP> + 1</SPAN></TH>
+    <TH>65535</TH></TR>
+  <TR>
+    <TH>17</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>17</SUP> + <I>x</I><SUP>14</SUP> + 
+      1</SPAN></TH>
+    <TH>131071</TH></TR>
+  <TR>
+    <TH>18</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>18</SUP> + <I>x</I><SUP>11</SUP> + 
+      1</SPAN></TH>
+    <TH>262143</TH></TR>
+  <TR>
+    <TH>19</TH>
+    <TH><SPAN class=texhtml><I>x</I><SUP>19</SUP> + <I>x</I><SUP>18</SUP> + 
+      <I>x</I><SUP>17</SUP> + <I>x</I><SUP>14</SUP> + 1</SPAN></TH>
+    <TH>524287</TH></TR>
+  <TR>
+    <TH>25 to 168</TH>
+    <TH><A class="external autonumber" 
+      title=http://www.xilinx.com/support/documentation/application_notes/xapp052.pdf 
+      href="http://www.xilinx.com/support/documentation/application_notes/xapp052.pdf" 
+      rel=nofollow>[1]</A></TH>
+    <TH></TH></TR></TBODY></TABLE>
+<P><A id=Output-stream_properties name=Output-stream_properties></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: Output-stream properties" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=4">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Output-stream properties</SPAN></H2>
+<UL>
+  <LI>Ones and zeroes occur in 'runs'. The output stream 0110100, for example 
+  consists of five runs of lengths 1,2,1,1,2, in order. In one period of a 
+  maximal LFSR, <SPAN class=texhtml>2<SUP><I>n</I> − 1</SUP></SPAN> runs occur 
+  (for example, a six bit LFSR will have 32 runs). Exactly <SPAN class=texhtml>1 
+  / 2</SPAN> of these runs will be one bit long, <SPAN class=texhtml>1 / 
+  4</SPAN> will be two bits long, up to a single run of zeroes <SPAN 
+  class=texhtml><I>n</I> − 1</SPAN> bits long, and a single run of ones <SPAN 
+  class=texhtml><I>n</I></SPAN> bits long. This same property is statistically 
+  expected in a truly random sequence. 
+  <LI>LFSR output streams are <A class=mw-redirect title=Deterministic 
+  href="http://en.wikipedia.org/wiki/Deterministic">deterministic</A>. If you 
+  know the present state, you can predict the next state. This is not possible 
+  with truly random events such as nuclear decay. 
+  <LI>The output stream is reversible; an LFSR with mirrored tap sequence will 
+  cycle through the states in reverse order. </LI></UL>
+<P><A id=Applications name=Applications></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: Applications" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=5">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Applications</SPAN></H2>
+<P>LFSRs can be implemented in hardware, and this makes them useful in 
+applications that require very fast generation of a pseudo-random sequence, such 
+as <A title="Direct-sequence spread spectrum" 
+href="http://en.wikipedia.org/wiki/Direct-sequence_spread_spectrum">direct-sequence 
+spread spectrum</A> radio.</P>
+<P>The <A title="Global Positioning System" 
+href="http://en.wikipedia.org/wiki/Global_Positioning_System">Global Positioning 
+System</A> uses an LFSR to rapidly transmit a sequence that indicates 
+high-precision relative time offsets. The <A 
+title="Nintendo Entertainment System" 
+href="http://en.wikipedia.org/wiki/Nintendo_Entertainment_System">Nintendo 
+Entertainment System</A> video game console also has an LFSR as part of its 
+sound system. (<A class="external autonumber" 
+title=http://nocash.emubase.de/everynes.htm 
+href="http://nocash.emubase.de/everynes.htm" rel=nofollow>[2]</A>)</P>
+<P><A id=Uses_as_Counters name=Uses_as_Counters></A></P>
+<H3><SPAN class=editsection>[<A title="Edit section: Uses as Counters" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=6">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Uses as Counters</SPAN></H3>
+<P>The repeating sequence of states of an LFSR allows it to be used as a 
+divider, or as a counter when a non-binary sequence is acceptable as is often 
+the case where computer index or framing locations need to be machine-readable. 
+LFSR <A title=Counter href="http://en.wikipedia.org/wiki/Counter">counters</A> 
+have simpler feedback logic than natural binary counters or <A title="Gray code" 
+href="http://en.wikipedia.org/wiki/Gray_code">Gray code</A> counters, and 
+therefore can operate at higher clock rates. However it is necessary to ensure 
+that the LFSR never enters an all-zeros state, for example by presetting it at 
+start-up to any other state in the sequence. The table of primitive polynomials 
+shows how LFSR's can be arranged in Fibonacci or Galois form to give maximal 
+periods. One can obtain any other period by adding to an LFSR that has a longer 
+period some logic that shortens the sequence by skipping some state(s), e.g. as 
+tabulated in <A class="external autonumber" 
+title=http://www.xilinx.com/support/documentation/application_notes/xapp052.pdf 
+href="http://www.xilinx.com/support/documentation/application_notes/xapp052.pdf" 
+rel=nofollow>[3]</A>.</P>
+<P><A id=Uses_in_cryptography name=Uses_in_cryptography></A></P>
+<H3><SPAN class=editsection>[<A title="Edit section: Uses in cryptography" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=7">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Uses in cryptography</SPAN></H3>
+<P>An LFSR can generate an extremely long sequence which can be used to encrypt 
+valuable information, for example by combining bits from the LFSR with 
+information bits in an <A class=mw-redirect title="Xor gate" 
+href="http://en.wikipedia.org/wiki/Xor_gate">xor gate</A>. The resulting bit 
+stream can only be decrypted by a receiver equipped with the same LFSR, starting 
+at the same state. Although an attacker might know or discover the LFSR 
+construction, as long as the starting state is kept as a secret key the attacker 
+confronts a monstrous search problem.</P>
+<P>LFSRs have long been used as <A class=mw-redirect 
+title="Pseudo-random number generator" 
+href="http://en.wikipedia.org/wiki/Pseudo-random_number_generator">pseudo-random 
+number generators</A> for use in <A title="Stream cipher" 
+href="http://en.wikipedia.org/wiki/Stream_cipher">stream ciphers</A> (especially 
+in <A title=Military href="http://en.wikipedia.org/wiki/Military">military</A> 
+<A title=Cryptography 
+href="http://en.wikipedia.org/wiki/Cryptography">cryptography</A>), due to the 
+ease of construction from simple <A class=mw-redirect title=Electromechanical 
+href="http://en.wikipedia.org/wiki/Electromechanical">electromechanical</A> or 
+<A class=mw-redirect title="Electronic circuits" 
+href="http://en.wikipedia.org/wiki/Electronic_circuits">electronic circuits</A>, 
+long <A title="Periodic function" 
+href="http://en.wikipedia.org/wiki/Periodic_function">periods</A>, and very 
+uniformly <A title="Probability distribution" 
+href="http://en.wikipedia.org/wiki/Probability_distribution">distributed</A> 
+outputs. However, an LFSR is a linear system, leading to fairly easy <A 
+title=Cryptanalysis 
+href="http://en.wikipedia.org/wiki/Cryptanalysis">cryptanalysis</A>. For 
+example, given a stretch of known plaintext and corresponding ciphertext, a 
+stretch of LFSR output used in the system described above can be recovered, and 
+from the output sequence one can construct an LFSR of minimal size by using the 
+<A class=mw-redirect title="Berlekamp-Massey algorithm" 
+href="http://en.wikipedia.org/wiki/Berlekamp-Massey_algorithm">Berlekamp-Massey 
+algorithm</A>, which with the known output can be used to simulate the intended 
+receiver to recover the remaining plaintext.</P>
+<P>Three general methods are employed to reduce this problem in LFSR-based 
+stream ciphers:</P>
+<UL>
+  <LI><A class=mw-redirect title=Non-linear 
+  href="http://en.wikipedia.org/wiki/Non-linear">Non-linear</A> combination of 
+  several <A title=Bit href="http://en.wikipedia.org/wiki/Bit">bits</A> from the 
+  LFSR <A title="State (computer science)" 
+  href="http://en.wikipedia.org/wiki/State_(computer_science)">state</A>; 
+  <LI>Non-linear combination of the outputs of two or more LFSRs; or 
+  <LI>Irregular clocking of the LFSR, as in the <A 
+  title="Alternating step generator" 
+  href="http://en.wikipedia.org/wiki/Alternating_step_generator">alternating 
+  step generator</A>. </LI></UL>
+<P>Important LFSR-based stream ciphers include <A title=A5/1 
+href="http://en.wikipedia.org/wiki/A5/1">A5/1</A>, <A title=A5/2 
+href="http://en.wikipedia.org/wiki/A5/2">A5/2</A>, <A title="E0 (cipher)" 
+href="http://en.wikipedia.org/wiki/E0_(cipher)">E0</A>, and the <A 
+title="Shrinking generator" 
+href="http://en.wikipedia.org/wiki/Shrinking_generator">shrinking 
+generator</A>.</P>
+<P><A id=Uses_in_digital_broadcasting_and_communications 
+name=Uses_in_digital_broadcasting_and_communications></A></P>
+<H3><SPAN class=editsection>[<A 
+title="Edit section: Uses in digital broadcasting and communications" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=8">edit</A>]</SPAN> 
+<SPAN class=mw-headline>Uses in digital broadcasting and 
+communications</SPAN></H3>
+<P>To prevent short repeating sequences (e.g., runs of 0's or 1's) from forming 
+spectral lines that may complicate symbol tracking at the receiver or interfere 
+with other transmissions, linear feedback registers are often used to 
+"randomize" the transmitted bitstream. This randomization is removed at the 
+receiver after demodulation. When the LFSR runs at the same rate as the 
+transmitted symbol stream, this technique is referred to as <A class=mw-redirect 
+title="Scrambler (randomizer)" 
+href="http://en.wikipedia.org/wiki/Scrambler_(randomizer)">scrambling</A>. When 
+the LFSR runs considerably faster than the symbol stream, expanding the 
+bandwidth of the transmitted signal, this is <A 
+title="Direct-sequence spread spectrum" 
+href="http://en.wikipedia.org/wiki/Direct-sequence_spread_spectrum">direct-sequence 
+spread spectrum</A>.</P>
+<P>Neither scheme should be confused with <A title=Encryption 
+href="http://en.wikipedia.org/wiki/Encryption">encryption</A> or <A 
+class=mw-redirect title=Encipherment 
+href="http://en.wikipedia.org/wiki/Encipherment">encipherment</A>; scrambling 
+and spreading with LFSRs do <EM>not</EM> protect the information from 
+eavesdropping.</P>
+<P>Digital broadcasting systems that use linear feedback registers:</P>
+<UL>
+  <LI><A title="ATSC Standards" 
+  href="http://en.wikipedia.org/wiki/ATSC_Standards">ATSC Standards</A> (HDTV 
+  transmission system – North America) 
+  <LI><A class=mw-redirect title="Digital audio broadcasting" 
+  href="http://en.wikipedia.org/wiki/Digital_audio_broadcasting">DAB</A> (<A 
+  class=mw-redirect title="Digital audio broadcasting" 
+  href="http://en.wikipedia.org/wiki/Digital_audio_broadcasting">Digital audio 
+  broadcasting</A> system -- for radio) 
+  <LI><A title=DVB-T href="http://en.wikipedia.org/wiki/DVB-T">DVB-T</A> (HDTV 
+  transmission system – Europe, Australasia) 
+  <LI><A title=NICAM href="http://en.wikipedia.org/wiki/NICAM">NICAM</A> 
+  (digital audio system for television) </LI></UL>
+<P>Other digital communications systems using LFSRs:</P>
+<UL>
+  <LI><A class=new title="INTELSAT business service (page does not exist)" 
+  href="http://en.wikipedia.org/w/index.php?title=INTELSAT_business_service&amp;action=edit&amp;redlink=1">IBS</A> 
+  (INTELSAT business service) 
+  <LI><A class=new title="Intermediate data rate (page does not exist)" 
+  href="http://en.wikipedia.org/w/index.php?title=Intermediate_data_rate&amp;action=edit&amp;redlink=1">IDR</A> 
+  (Intermediate Data Rate service) 
+  <LI><A class=mw-redirect title="Serial digital interface" 
+  href="http://en.wikipedia.org/wiki/Serial_digital_interface">SDI</A> (Serial 
+  Digital Interface transmission) 
+  <LI>Data transfer over <A class=mw-redirect title=PSTN 
+  href="http://en.wikipedia.org/wiki/PSTN">PSTN</A> (according to the <A 
+  title=ITU-T href="http://en.wikipedia.org/wiki/ITU-T">ITU-T</A> V-series 
+  recommendations) 
+  <LI><A class=mw-redirect title=CDMA 
+  href="http://en.wikipedia.org/wiki/CDMA">CDMA</A> (Code Division Multiple 
+  Access) cellular telephony </LI></UL>
+<P><A id=See_also name=See_also></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: See also" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=9">edit</A>]</SPAN> 
+<SPAN class=mw-headline>See also</SPAN></H2>
+<UL>
+  <LI><A title="Pinwheel (cryptography)" 
+  href="http://en.wikipedia.org/wiki/Pinwheel_(cryptography)">Pinwheel</A> 
+  <LI><A title="Mersenne twister" 
+  href="http://en.wikipedia.org/wiki/Mersenne_twister">Mersenne twister</A> 
+  <LI><A class=mw-redirect title="PN Sequences" 
+  href="http://en.wikipedia.org/wiki/PN_Sequences">PN Sequences</A> 
+  <LI><A title="Maximum length sequence" 
+  href="http://en.wikipedia.org/wiki/Maximum_length_sequence">Maximum length 
+  sequence</A> </LI></UL>
+<P><A id=External_links name=External_links></A></P>
+<H2><SPAN class=editsection>[<A title="Edit section: External links" 
+href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit&amp;section=10">edit</A>]</SPAN> 
+<SPAN class=mw-headline>External links</SPAN></H2>
+<UL>
+  <LI><A class="external text" 
+  title=http://www.newwaveinstruments.com/resources/articles/m_sequence_linear_feedback_shift_register_lfsr.htm 
+  href="http://www.newwaveinstruments.com/resources/articles/m_sequence_linear_feedback_shift_register_lfsr.htm" 
+  rel=nofollow>LFSR Reference</A> LFSR theory and implementation, maximal length 
+  sequences, and comprehensive feedback tables for lengths from 7 to 16,777,215 
+  (3 to 24 stages), and partial tables for lengths up to 4,294,967,295 (25 to 32 
+  stages). 
+  <LI><A class="external text" 
+  title=http://www.itu.int/rec/T-REC-O.151-199210-I/en 
+  href="http://www.itu.int/rec/T-REC-O.151-199210-I/en" 
+  rel=nofollow>International Telecommunications Union Recommendation O.151</A> 
+  (August 1992) 
+  <LI><A class="external text" 
+  title=http://www.xilinx.com/bvdocs/appnotes/xapp052.pdf 
+  href="http://www.xilinx.com/bvdocs/appnotes/xapp052.pdf" rel=nofollow>Maximal 
+  Length LFSR table</A> with length from 3 to 168 
+  <LI><A class="external text" 
+  title=http://www.physics.otago.ac.nz/px/research/electronics/papers/technical-reports/lfsr_table.pdf 
+  href="http://www.physics.otago.ac.nz/px/research/electronics/papers/technical-reports/lfsr_table.pdf" 
+  rel=nofollow>Maximal Length LFSR table</A> with length from 1 to 786, also 
+  1024 and 2048. 
+  <LI><A class="external text" 
+  title=http://www.maxim-ic.com/appnotes.cfm?appnote_number=1743&amp;CMP=WP-9 
+  href="http://www.maxim-ic.com/appnotes.cfm?appnote_number=1743&amp;CMP=WP-9" 
+  rel=nofollow>Pseudo-Random Number Generation Routine</A> 
+  <LI><A class="external free" 
+  title=http://www.ee.ualberta.ca/~elliott/ee552/studentAppNotes/1999f/Drivers_Ed/lfsr.html 
+  href="http://www.ee.ualberta.ca/~elliott/ee552/studentAppNotes/1999f/Drivers_Ed/lfsr.html" 
+  rel=nofollow>http://www.ee.ualberta.ca/~elliott/ee552/studentAppNotes/1999f/Drivers_Ed/lfsr.html</A> 
+
+  <LI><A class="external free" 
+  title=http://www.quadibloc.com/crypto/co040801.htm 
+  href="http://www.quadibloc.com/crypto/co040801.htm" 
+  rel=nofollow>http://www.quadibloc.com/crypto/co040801.htm</A> 
+  <LI><A class="external text" 
+  title=http://www.yikes.com/~ptolemy/lfsr_web/index.htm 
+  href="http://www.yikes.com/~ptolemy/lfsr_web/index.htm" rel=nofollow>Simple 
+  explanation of LFSRs for Engineers</A> 
+  <LI><A class="external text" 
+  title=http://www.ece.cmu.edu/~koopman/lfsr/index.html 
+  href="http://www.ece.cmu.edu/~koopman/lfsr/index.html" rel=nofollow>Feedback 
+  terms</A> 
+  <LI><A class="external text" title=http://homepage.mac.com/afj/lfsr.html 
+  href="http://homepage.mac.com/afj/lfsr.html" rel=nofollow>General LFSR 
+  Theory</A> 
+  <LI><A class="external text" title=http://homepage.mac.com/afj/taplist.html 
+  href="http://homepage.mac.com/afj/taplist.html" rel=nofollow>Table of Maximal 
+  Tap Sequences</A> 
+  <LI><A class="external text" 
+  title=http://www-rocq.inria.fr/codes/LFSR/index.html 
+  href="http://www-rocq.inria.fr/codes/LFSR/index.html" rel=nofollow>Shift 
+  register code generator</A> </LI></UL><!-- 
+NewPP limit report
+Preprocessor node count: 94/1000000
+Post-expand include size: 0/2048000 bytes
+Template argument size: 0/2048000 bytes
+Expensive parser function count: 0/500
+--><!-- Saved in parser cache with key enwiki:pcache:idhash:58992-0!1!0!default!!en!2 and timestamp 20080714064813 -->
+<DIV class=printfooter>Retrieved from "<A 
+href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register">http://en.wikipedia.org/wiki/Linear_feedback_shift_register</A>"</DIV>
+<DIV class=catlinks id=catlinks>
+<DIV id=mw-normal-catlinks><A title=Special:Categories 
+href="http://en.wikipedia.org/wiki/Special:Categories">Categories</A>: <SPAN 
+dir=ltr><A title="Category:Digital registers" 
+href="http://en.wikipedia.org/wiki/Category:Digital_registers">Digital 
+registers</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Cryptographic algorithms" 
+href="http://en.wikipedia.org/wiki/Category:Cryptographic_algorithms">Cryptographic 
+algorithms</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Pseudorandom number generators" 
+href="http://en.wikipedia.org/wiki/Category:Pseudorandom_number_generators">Pseudorandom 
+number generators</A></SPAN></DIV></DIV><!-- end content -->
+<DIV class=visualClear></DIV></DIV></DIV></DIV>
+<DIV id=column-one>
+<DIV class=portlet id=p-cactions>
+<H5>Views</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=selected id=ca-nstab-main><A title="View the content page [c]" 
+  accessKey=c 
+  href="http://en.wikipedia.org/wiki/Linear_feedback_shift_register">Article</A> 
+
+  <LI id=ca-talk><A title="Discussion about the content page [t]" accessKey=t 
+  href="http://en.wikipedia.org/wiki/Talk:Linear_feedback_shift_register">Discussion</A> 
+
+  <LI id=ca-edit><A 
+  title="You can edit this page. Please use the preview button before saving. [e]" 
+  accessKey=e 
+  href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=edit">Edit 
+  this page</A> 
+  <LI id=ca-history><A title="Past versions of this page [h]" accessKey=h 
+  href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;action=history">History</A> 
+  </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-personal>
+<H5>Personal tools</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=pt-login><A 
+  title="You are encouraged to log in; however, it is not mandatory. [o]" 
+  accessKey=o 
+  href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Linear_feedback_shift_register">Log 
+  in / create account</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-logo><A title="Visit the main page [z]" 
+style="BACKGROUND-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png)" 
+accessKey=z href="http://en.wikipedia.org/wiki/Main_Page"></A></DIV>
+<SCRIPT type=text/javascript> if (window.isMSIE55) fixalpha(); </SCRIPT>
+
+<DIV class="generated-sidebar portlet" id=p-navigation>
+<H5>Navigation</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-mainpage><A title="Visit the main page [z]" accessKey=z 
+  href="http://en.wikipedia.org/wiki/Main_Page">Main Page</A> 
+  <LI id=n-Contents><A title="Guides to browsing Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Portal:Contents">Contents</A> 
+  <LI id=n-featuredcontent><A 
+  href="http://en.wikipedia.org/wiki/Portal:Featured_content">Featured 
+  content</A> 
+  <LI id=n-currentevents><A 
+  title="Find background information on current events" 
+  href="http://en.wikipedia.org/wiki/Portal:Current_events">Current events</A> 
+  <LI id=n-randompage><A title="Load a random article [x]" accessKey=x 
+  href="http://en.wikipedia.org/wiki/Special:Random">Random article</A> 
+</LI></UL></DIV></DIV>
+<DIV class=portlet id=p-search>
+<H5><LABEL for=searchInput>Search</LABEL></H5>
+<DIV class=pBody id=searchBody>
+<FORM id=searchform action=/wiki/Special:Search>
+<DIV><INPUT id=searchInput title="Search Wikipedia [f]" accessKey=f name=search> 
+<INPUT class=searchButton id=searchGoButton title="Go to a page with this exact name if one exists" type=submit value=Go name=go>&nbsp; 
+<INPUT class=searchButton id=mw-searchButton title="Search the wiki for this text" type=submit value=Search name=fulltext> 
+</DIV></FORM></DIV></DIV>
+<DIV class="generated-sidebar portlet" id=p-interaction>
+<H5>Interaction</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-aboutsite><A 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=n-portal><A 
+  title="About the project, what you can do, where to find things" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Community_Portal">Community 
+  portal</A> 
+  <LI id=n-recentchanges><A title="The list of recent changes in the wiki [r]" 
+  accessKey=r href="http://en.wikipedia.org/wiki/Special:RecentChanges">Recent 
+  changes</A> 
+  <LI id=n-contact><A title="How to contact Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</A> 
+
+  <LI id=n-sitesupport><A title="Support us" 
+  href="http://wikimediafoundation.org/wiki/Donate">Donate to Wikipedia</A> 
+  <LI id=n-help><A title="Guidance on how to use and edit Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Help:Contents">Help</A> 
+</LI></UL></DIV></DIV>
+<DIV class=portlet id=p-tb>
+<H5>Toolbox</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=t-whatlinkshere><A 
+  title="List of all English Wikipedia pages that link here [j]" accessKey=j 
+  href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Linear_feedback_shift_register">What 
+  links here</A> 
+  <LI id=t-recentchangeslinked><A 
+  title="Recent changes in pages linked from this page [k]" accessKey=k 
+  href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Linear_feedback_shift_register">Related 
+  changes</A> 
+  <LI id=t-upload><A title="Upload files [u]" accessKey=u 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Upload">Upload file</A> 
+  <LI id=t-specialpages><A title="List of all special pages [q]" accessKey=q 
+  href="http://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</A> 
+  <LI id=t-print><A title="Printable version of this page [p]" accessKey=p 
+  href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;printable=yes">Printable 
+  version</A> 
+  <LI id=t-permalink><A title="Permanent link to this version of the page" 
+  href="http://en.wikipedia.org/w/index.php?title=Linear_feedback_shift_register&amp;oldid=218127306">Permanent 
+  link</A>
+  <LI id=t-cite><A 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Linear_feedback_shift_register&amp;id=218127306">Cite 
+  this page</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-lang>
+<H5>Languages</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=interwiki-de><A 
+  href="http://de.wikipedia.org/wiki/Linear_rÃ¼ckgekoppeltes_Schieberegister">Deutsch</A> 
+
+  <LI class=interwiki-es><A href="http://es.wikipedia.org/wiki/LFSR">Español</A> 
+
+  <LI class=interwiki-eo><A 
+  href="http://eo.wikipedia.org/wiki/Vikipedio:Projekto_matematiko/Lineara_retrokupla_Åova_registro">Esperanto</A> 
+
+  <LI class=interwiki-ko><A 
+  href="http://ko.wikipedia.org/wiki/ì&nbsp;í_ëë¨¹ì_ìíí¸_ë&nbsp;ì§ì¤í°">한국어</A> 
+
+  <LI class=interwiki-it><A 
+  href="http://it.wikipedia.org/wiki/Registro_a_scorrimento_a_retroazione_lineare">Italiano</A> 
+
+  <LI class=interwiki-nl><A 
+  href="http://nl.wikipedia.org/wiki/Linear_Feedback_Shift_Register">Nederlands</A> 
+  </LI></UL></DIV></DIV></DIV><!-- end of the left (by default at least) column -->
+<DIV class=visualClear></DIV>
+<DIV id=footer>
+<DIV id=f-poweredbyico><A href="http://www.mediawiki.org/"><IMG 
+alt="Powered by MediaWiki" 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png"></A></DIV>
+<DIV id=f-copyrightico><A href="http://wikimediafoundation.org/"><IMG 
+alt="Wikimedia Foundation" 
+src="Linear feedback shift register - Wikipedia, the free encyclopedia_files/wikimedia-button.png" 
+border=0></A></DIV>
+<UL id=f-list>
+  <LI id=lastmod>This page was last modified on 9 June 2008, at 07:57. 
+  <LI id=copyright>All text is available under the terms of the <A 
+  class=internal title="Wikipedia:Text of the GNU Free Documentation License" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License">GNU 
+  Free Documentation License</A>. (See <B><A class=internal 
+  title=Wikipedia:Copyrights 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights">Copyrights</A></B> 
+  for details.) <BR>Wikipedia® is a registered trademark of the <A 
+  href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc</A>., a 
+  U.S. registered <A class=internal title=501(c)(3) 
+  href="http://en.wikipedia.org/wiki/501(c)#501.28c.29.283.29">501(c)(3)</A> <A 
+  href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</A> 
+  <A class=internal title="Non-profit organization" 
+  href="http://en.wikipedia.org/wiki/Non-profit_organization">nonprofit</A> <A 
+  title="Charitable organization" 
+  href="http://en.wikipedia.org/wiki/Charitable_organization">charity</A>.<BR>
+  <LI id=privacy><A title="wikimedia:Privacy policy" 
+  href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy policy</A> 
+  <LI id=about><A title=Wikipedia:About 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> 
+  <LI id=disclaimer><A title="Wikipedia:General disclaimer" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</A> 
+  </LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>if (window.runOnloadHook) runOnloadHook();</SCRIPT>
+<!-- Served by srv163 in 0.045 secs. --></BODY></HTML>
