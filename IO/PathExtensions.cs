@@ -228,14 +228,18 @@ namespace Paulus.IO
         /// <param name="baseFile"></param>
         /// <param name="file"></param>
         /// <returns>If the path is absolute then returns the path. If the path is relative then it returns the absolute path based on the basePath. If the file does not exists it is combined with the executable path.</returns>
-        public static string GetAbsolutePath2(string baseFile, string file,bool implyExecutablePathIfFileDoesNotExist=true)
+        public static string GetAbsolutePath2(string baseFile, string file, bool implyExecutablePathIfFileDoesNotExist = true)
         {
             if (!IsPathAbsolute(file))
             {
-                string candidatePath = Path.Combine(Path.GetDirectoryName(baseFile), file);
+                //if basefile is already a directory then check for this one first
+                string candidatePath = Directory.Exists(baseFile) ?
+                    Path.Combine(baseFile, file) : //else (if it is a file check for its parent directory)
+                    Path.Combine(Path.GetDirectoryName(baseFile), file);
+
                 if (File.Exists(candidatePath) ||
                     !File.Exists(candidatePath) && !implyExecutablePathIfFileDoesNotExist)
-                    return Path.Combine(Path.GetDirectoryName(baseFile), file);
+                    return candidatePath;
                 else
                     return PathExtensions.CombineWithExecutablePath(file);
             }
